@@ -5,6 +5,9 @@ email: contact@wandercosta.com
 description: "This is my personal blog, where I post my thougths about technology, software developement, and whatever I find interesting!"
 baseurl: ""
 url: "http://wandercosta.com"
+comments: true
+
+# Social
 twitter_username: rwanderc
 github_username: rwanderc
 #facebook_username: rwanderc
@@ -12,13 +15,13 @@ linkedin_username: rwander
 analytics_id: UA-70100612-2
 gravatar_url: "https://en.gravatar.com/userimage/65982695/7e0f8f987bd6fc9024e1afc83c70cf4f.png?size=150"
 
-comments: true
-
 # Build settings
 markdown: kramdown
 highlighter: pygments
-permalink: pretty
-paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+permalink: "/:title"
+paginate_path: "/pagina-:num"
+paginate: 10
+timezone: America/Sao_Paulo
 
 gems: ["jekyll-paginate","jemoji"]
