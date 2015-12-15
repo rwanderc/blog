@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       "My Dev Environment"
+title:       "My Development Environment"
 subtitle:    "what I think, what I use, what I do"
 description: "The perspective of a software engineer about his development environment."
 date:        2015-12-14 13:56:00
