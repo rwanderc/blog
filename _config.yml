@@ -12,6 +12,8 @@ linkedin_username: rwander
 analytics_id: UA-70100612-2
 gravatar_url: "https://en.gravatar.com/userimage/65982695/7e0f8f987bd6fc9024e1afc83c70cf4f.png?size=150"
 
+comments: true
+
 # Build settings
 markdown: kramdown
 highlighter: pygments
