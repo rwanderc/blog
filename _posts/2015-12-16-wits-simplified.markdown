@@ -46,7 +46,7 @@ All the mapping needs to be known and well aligned between both sides, so as to 
 
 In the end, it causes the transmission to be the last concern of the companies at the rigs, and this is where the consistency not enforced by the protocol appears.
 
-However, being simple as 1 2 3 makes of configuring Wits a very fast setup, and easier development software to transmit. Having this fact, associated to the protocol's maturity, the compatibility with the industry is huge.
+However, being simple as 1 2 3 makes configuration of Wits a simple setup, as well as makes it easier to create new software to transmit it. Having this fact, associated to the protocol's maturity, the compatibility with the industry is huge.
 
 ##Versions
 
