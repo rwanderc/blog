@@ -1,8 +1,8 @@
 ---
 layout:      post
 title:       "Wits Simplified"
-subtitle:    "understanding Oil & Gas operations data transmission"
-description: "Understanding Oil & Gas operations data transmission, from a developer's perspective"
+subtitle:    "understanding data transmission in Oil & Gas operations"
+description: "Understanding data transmission in Oil & Gas operations, from a developer's perspective"
 date:        2015-12-16 18:12:00
 author:      "Wander Costa"
 header-img: "img/post-bg-wits-simplified.jpg"
