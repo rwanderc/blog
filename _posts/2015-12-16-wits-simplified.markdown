@@ -8,7 +8,7 @@ author:      "Wander Costa"
 header-img: "img/post-bg-wits-simplified.jpg"
 ---
 
-Yeah, I know this is a very specific domain knowledge, and probably if you are not a involved with the Oil & Gas industry, it's not gonna make any sense for you. However, it's interesting to know that Oil & Gas operations have a very large mass of data of all kind, transmitted in real time, to make it possible to monitor the well construction process and mainly to mitigate the risks of failures, that sometimes cause fatal accidents or huge damages to the environment ...
+Yeah, I know this is a very specific domain knowledge, and probably if you are not involved with the Oil & Gas industry, it's not gonna make any sense for you. However, it's interesting to know that Oil & Gas operations have a very large mass of data of all kind, transmitted in real time, to make it possible to monitor the well construction process and mainly to mitigate the risks of failures, that sometimes cause fatal accidents or huge damages to the environment ...
 
 In this article, I will provide a little understanding of the **Wits** protocol. There are other transmission protocols, like [WitsML][witsml] that is newer, more powerfull in some ways, but much more complex and dependant of good infrastructure. WitsML might be subject of other posts in the future, but keep in mind that Wits and WitsML are totally different protocols for the same purpose.
 
