@@ -34,6 +34,6 @@
     <meta property="og:type" content="{% if page.layout == "post" %}{{ "article" }}{% else %}{{ "website" }}{% endif %}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.description  %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ page.header-img }}" />
+    <meta property="og:image" content="{{ page.header-img | prepend: site.baseurl | prepend: site.url }}" />
 
 </head>
