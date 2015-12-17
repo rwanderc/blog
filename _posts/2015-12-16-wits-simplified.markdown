@@ -30,7 +30,7 @@ Blocks are delimited by the `&&` and `!!` lines and always refer to a single rec
 !!
 {% endhighlight %}
 
-Considering the example above, we have one block, with 3 data lines, which the line `01082319.024` would refere to:
+Considering the example above, we have one block, with 3 data lines, which the line `01082319.024` refers to:
 
 *   Record: `01`
 *   Item: `08`
