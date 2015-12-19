@@ -1,8 +1,8 @@
 ---
 layout:      post
 title:       "Wits Generator"
-subtitle:    "an application to generate randomic Wits data"
-description: "A Java command-line applicatioon to generate randomic Wits data."
+subtitle:    "an application to generate random Wits data"
+description: "A Java command-line applicatioon to generate random Wits data."
 date:        2015-12-19 04:43:00
 author:      "Wander Costa"
 header-img:  "img/post-bg-programming.jpg"
@@ -12,7 +12,7 @@ thumb-img:   "img/thumb/post-bg-java-wits-generator-thumb.jpg"
 [github]:https://github.com/rwanderc
 [code]:https://github.com/rwanderc/WitsGenerator
 
-Carrying on with the context of Oil & Gas, in this post I will share a very simple Java application to stream randomic Wits data, provided through a TCP Socket Server to a single client.
+Carrying on with the context of Oil & Gas, in this post I will share a very simple Java application to stream random Wits data, provided through a TCP Socket Server to a single client.
 
 You will need Java 8 to build the application, or some previous version if you take out the diamond references and maybe some other stuff. No additional libraries are being used.
 
@@ -36,7 +36,7 @@ The usage is as follow:
 
 {% highlight text %}
 Usage: java -jar WitsGenerator.jar [port] [frequency] [records] [items]
-Creates a socket server and transmit Wits randomic data from time
+Creates a socket server and transmit Wits random data from time
 to time. Only allows ONE single client connected.
 
 Mandatory arguments
