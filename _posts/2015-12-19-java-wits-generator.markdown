@@ -5,7 +5,8 @@ subtitle:    "an application to generate randomic Wits data"
 description: "A Java command-line applicatioon to generate randomic Wits data."
 date:        2015-12-19 04:43:00
 author:      "Wander Costa"
-header-img: "img/post-bg-programming.jpg"
+header-img:  "img/post-bg-programming.jpg"
+thumb-img:   "img/thumb/post-bg-java-wits-generator-thumb.jpg"
 ---
 
 [github]:https://github.com/rwanderc
