@@ -2,7 +2,7 @@
 layout:      post
 title:       "WitsGenerator"
 subtitle:    "an application to generate random Wits data"
-description: "A Java command-line applicatioon to generate random Wits data."
+description: "A Java command-line application to generate random Wits data."
 date:        2015-12-19 04:43:00
 author:      "Wander Costa"
 header-img:  "img/post-bg-programming.jpg"
