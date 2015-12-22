@@ -157,49 +157,49 @@ public class WitsServer {
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.wandercosta.witsgenerator;
+package com.wandercosta.witsgenerator.connection;
 
-import com.wandercosta.witsgenerator.generator.WitsGenerator;
-import com.wandercosta.witsgenerator.connection.TcpServer;
+import java.io.PrintStream;
+import java.net.ServerSocket;
+import java.net.Socket;
 
 /**
- * This class is responsible for starting the TCP Server thread and writing to
- * its clients from time to time, according to the frequency configured.
+ * This is the TCP Socket Server that will open the port for the client to get
+ * connected. It only accepts one client connected.
  *
  * @author Wander Costa (www.wandercosta.com)
  */
-public class WitsServer {
+public class TcpServer extends Thread {
 
-    private final TcpServer server;
-    private final WitsGenerator generator;
-    private final int frequency;
+    private final int port;
+    private ServerSocket socket;
+    private Socket client;
+    private PrintStream clientOut;
 
-    public WitsServer(int port, int frequency, int records, int items) {
+    public TcpServer(int port) {
+        this.port = port;
+    }
 
-        this.server = new TcpServer(port);
-        this.generator = new WitsGenerator(records, items);
-        this.frequency = frequency;
+    @Override
+    public void run() {
+
+        try {
+
+            socket = new ServerSocket(port);
+
+            client = socket.accept();
+            clientOut = new PrintStream(client.getOutputStream());
+
+        } catch (Exception ex) {
+        }
 
     }
 
-    public void start() {
+    public void write(String data) {
 
-        server.start();
+        if (client != null && clientOut != null && !client.isClosed()) {
 
-        long spentTime, wait;
-
-        while (true) {
-
-            spentTime = System.currentTimeMillis();
-            server.write(generator.generate());
-            spentTime = -spentTime + System.currentTimeMillis();
-
-            wait = frequency * 1000 - spentTime;
-
-            try {
-                Thread.sleep(wait);
-            } catch (Throwable ex) {
-            }
+            clientOut.print(data);
 
         }
 
