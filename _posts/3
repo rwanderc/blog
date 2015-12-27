@@ -1,0 +1,44 @@
+---
+layout:      post
+title:       "Twos Complement"
+subtitle:    "how numbers are represented in binary"
+description: "Briefly explanation of how numbers are represented in binary notation."
+date:        2015-12-23 05:56:00
+author:      "Wander Costa"
+header-img: "img/post-bg-my-development-environment.jpg"
+---
+
+Have you ever thought about how numbers are represented in your computer? We all know that computers "talk" in binary, but how exactly does it work? In this post, I will briefly introduce **Two's Complement**, which is the way signed number types are represented. Signed numbers, mean that the data type supports representation of negative and positive values.
+
+## Limits
+
+Depending on the programming languages, it's very common to have limits in representation.
+
+In Java, for example:
+
+* `byte` is signed, 8 bits long;
+* `short` is signed, 16 bits long;
+* `int` is signed, 32 bits long;
+* `long` is signed, 64 bits long.
+
+C, however, has both signed and unsigned version of the above types, and its `long` is 32 bits long.
+
+##Understanding Representation
+
+In Java, by default, integers `int` are signed (have negative and positive values) 32 bits long, represented in two's complement, what means that:
+
+* `0000 0000 0000 0000 0000 0000 0000 0000` represents the number 0;
+* `0111 1111 1111 1111 1111 1111 1111 1111` represents the number 2147483647 ($$ 2^{31}-1 $$);
+* `1000 0000 0000 0000 0000 0000 0000 0000` represents the number -2147483648 ($$ - (2^{31}) $$);
+* `1111 1111 1111 1111 1111 1111 1111 1111` represents the number -1;
+
+As you can see, the left most bit (most significant bit) defines if the number is positive (`0`) or negative (`1`).
+
+Another inference that can be done is about the mirroring. If you could fold the total length of numbers in the middle, you would have:
+
+* 0 mirroring -1;
+* 1 mirroring -2;
+* 2 mirroring -3, and so on, until;
+* $$ 2^{31} - 1 $$ mirroring $$ - (2^{31}) $$.
+
+Note that the individual sum of all mirrored values is -1.

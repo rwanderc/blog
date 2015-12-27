@@ -21,7 +21,7 @@ highlighter: pygments
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 permalink: "/:title"
 paginate_path: "/pagina-:num"
-paginate: 10
+paginate: 5
 timezone: America/Sao_Paulo
 
 gems: ["jekyll-paginate","jemoji"]
