@@ -3,7 +3,7 @@ layout:      post
 title:       "Two's Complement"
 subtitle:    "how signed integer numbers are represented in binary"
 description: "Briefly explanation of how signed integer numbers are represented in binary."
-date:        2015-12-27 02:30:00
+date:        2015-12-27 20:05:00
 author:      "Wander Costa"
 header-img: "img/post-bg-twos-complement.jpg"
 ---

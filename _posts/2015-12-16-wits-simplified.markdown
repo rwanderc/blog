@@ -52,5 +52,12 @@ However, being simple as 1 2 3 makes configuration of Wits a simple setup, as we
 
 There are some different versions of Wits but as per my experience the most widely used are Level 0 and Level 1. A big difference between these two is that Level 1 has twenty five predefined records and items identified, covering drilling, geology, directional work, MWD, cementing and testing. Having these pre-defined records makes a little easier to maintaing an aggreement between the sides.
 
+## Sources
+
+[WITS - Wellsite Information Transfer Specification][wits]
+
+[WITSML - Current Standards][witsml]
+
+
 [wits]:http://home.sprynet.com/~carob/ 
 [witsml]:http://www.energistics.org/drilling-completions-interventions/witsml-standards/current-standards
