@@ -5,7 +5,8 @@ subtitle:    "understanding data transmission in Oil & Gas operations"
 description: "Understanding data transmission in Oil & Gas operations, from a developer's perspective"
 date:        2015-12-16 18:12:00
 author:      "Wander Costa"
-header-img: "img/post-bg-rig.jpg"
+header-img:  "/img/post-bg-rig.jpg"
+thumb-img:   "/img/thumb/thumb-wits-simplified.jpg"
 ---
 
 Yeah, I know this is a very specific domain knowledge, and probably if you are not involved with the Oil & Gas industry, it's not gonna make any sense for you. However, it's interesting to know that Oil & Gas operations have a very large mass of data of all kind, transmitted in real time, to make it possible to monitor the well construction process and mainly to mitigate the risks of failures, that sometimes cause fatal accidents or huge damages to the environment ...

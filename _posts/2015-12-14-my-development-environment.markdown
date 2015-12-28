@@ -5,7 +5,8 @@ subtitle:    "what I think, what I use, what I do"
 description: "The perspective of a software engineer about his development environment."
 date:        2015-12-14 13:56:00
 author:      "Wander Costa"
-header-img: "img/post-bg-my-development-environment.jpg"
+header-img:  "/img/post-bg-my-development-environment.jpg"
+thumb-img:   "/img/thumb/thumb-my-development-environment.jpg"
 ---
 
 Hi there! This is the very first post of my blog, and I decided to start with my development environment. Need to make it clear that this is my first blog, however I ever wanted to create one. So, here we go...

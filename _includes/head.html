@@ -42,9 +42,9 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:description" content="{% if page.description  %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     {% if page.thumb-img %}
-    <meta property="og:image" content="{{ page.thumb-img | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image" content="{{ page.thumb-img | page.url | prepend: site.baseurl | prepend: site.url }}" />
     {% else %}
-    <meta property="og:image" content="{{ page.header-img | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image" content="{{ page.header-img | page.url | prepend: site.baseurl | prepend: site.url }}" />
     {% endif %}
- 
+
 </head>
