@@ -146,5 +146,6 @@ Shifts in binary representations are shortcuts to calculate powers of 2 and squa
 
 When shifting A to the left in one position, if the most significant bit is not modified, the result will be $$ A^2 $$. When shifting A to the right in one position, if the most significant bit is not modified, the result will be $$ \sqrt A $$.
 
-[twos-complement]: twos-complement
+
+[twos-complement]: http://www.wandercosta.com/twos-complement
 [unix-permissions]: https://en.wikipedia.org/wiki/File_system_permissions
