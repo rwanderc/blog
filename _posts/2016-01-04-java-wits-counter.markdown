@@ -15,8 +15,6 @@ thumb-img:   "/img/thumb/thumb-java-witscounter.jpg"
 
 Recently, I published a post of an application called [WitsGenerator][blog-witsgenerator] to provide random Wits data through a TCP port. Today I'm publishing another application related to the Oil & Gas business, but now it's to count the amount of parameters being transmitted through Wits.
 
-![post-img-java-witscounter-printscreen1.jpg](/img/post-img-java-witscounter-printscreen1.jpg)
-
 This application was compiled using Java 8, but you can compile also in previous versions of Java (maybe some adjustments will be necessary).
 
 This [code][git-witscounter] is also available in my <i class="fa fa-github"></i> [GitHub][github] page. Feel free to comment if you have any doubt or suggestion. :smile:
