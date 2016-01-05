@@ -59,7 +59,8 @@ Another inference that can be done is about mirroring. If you could fold the tot
 * 0 mirroring -1;
 * 1 mirroring -2;
 * 2 mirroring -3, and so on, until;
-* $$ (2^{31} - 1) $$ mirroring $$ - (2^{31}) $$.
+* $$ (2^{31} - 1) $$ mirroring $$ - (2^{31}) $$;
+* $$ (X - 1) $$ mirroring $$ -X $$
 
 **Curiosity:** Note that the individual sum of all mirrored values is -1.
 
