@@ -29,7 +29,7 @@ This software is licensed under the MIT license, what basically means that you c
 
 This simple application provides 2 different information:
 
-* The total amoun of parameters per time interval;
+* The total amount of parameters per time interval;
 * The amount of different parameters per time interval.
 
 ![post-img-java-witscounter-printscreen1.jpg](/img/post-img-java-witscounter-printscreen1.jpg)
