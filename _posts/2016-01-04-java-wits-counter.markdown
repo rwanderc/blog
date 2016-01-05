@@ -45,7 +45,7 @@ The usage is as follow:
 {% highlight text %}
 Usage: java -jar WitsCounter.jar [host] [port] [interval]
 Connects to a Wits server through TCP Socket and prints the number
-of parameters being received per time interval. If Doesnot reconnect if connection fails.
+of parameters being received per time interval. If Does not reconnect if connection fails.
 
 Mandatory arguments
   host          The IP of hostname of the server
