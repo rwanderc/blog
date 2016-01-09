@@ -43,7 +43,7 @@ All the mapping needs to be known and well aligned between both sides, so as to 
 
 ###Consistency and Flexibility
 
-**Time is money!** The Oil & Gas operations are still very expensive, and operators push the service companies to be very optimized... One of the results of this pressure is seem in the lack of time and effort to make data transmission to be correct from the beginning. And, of course, **first things first**. Making sure the rig doesn't have a risky scenario is uncomparable more important than making transmission aligned.
+**Time is money!** The Oil & Gas operations are still very expensive, and operators push the service companies to be very optimized... One of the results of this pressure is seem in the lack of time and effort to make data transmission to be correct from the beginning. And, of course, **first thing's first**. Making sure the rig doesn't have a risky scenario is uncomparable more important than making transmission aligned.
 
 In the end, it causes the transmission to be the last concern of the companies at the rigs, and this is where the consistency not enforced by the protocol appears.
 
