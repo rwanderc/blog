@@ -3,9 +3,10 @@ layout:      post
 title:       "String Generator"
 subtitle:    "how to generate strings programatically"
 description: "How to generate Strings programatically."
-date:        2016-02-04 01:00:00
+date:        2016-02-06 18:00:00
 author:      "Wander Costa"
-header-img: "img/post-bg-string-generator.jpg"
+header-img:  "/img/post-bg-programming.jpg"
+thumb-img:   "/img/thumb/thumb-java-string-generator.jpg"
 ---
 
 [github]:https://github.com/rwanderc
@@ -17,8 +18,8 @@ It's usually necessary, sometimes, to have a way to produce random strings progr
 * Produce random passwords;
 * Produce random patterns, etc.
 
-Today, I will show you a very quick class to produce those strings and import into your projects.
-This application was compiled using Java 8, but you can compile also in previous versions of Java (maybe some adjustments will be necessary).
+Today, I will show you a very quick class to produce those strings to use in your projects.
+This was compiled using Java 8, but you can compile also in previous versions of Java (maybe some adjustments will be necessary).
 
 This [code][git-stringgenerator] is also available in my <i class="fa fa-github"></i> [GitHub][github] page. Feel free to comment if you have any doubt or suggestion. :smile:
 
@@ -28,7 +29,7 @@ This software is licensed under the MIT license, what basically means that you c
 
 # Architeture
 
-This is a single class application, which has an important method that returns the new String.
+This is a single class application, which has a method that returns the new String.
 
 * **StringGenerator**: generates a new String;
 * **Main**: is the executor.
@@ -73,11 +74,11 @@ import java.util.Random;
  * Simple class to generate random {@link String}s.
  *
  * @author Wander Costa (www.wandercosta.com)
+ * @version 1.0
  */
 public class StringGenerator {
 
     private static final String ABC = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
     private final Random random;
 
     public StringGenerator() {
