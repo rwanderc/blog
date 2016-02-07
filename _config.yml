@@ -17,7 +17,7 @@ gravatar_url: "https://en.gravatar.com/userimage/65982695/7e0f8f987bd6fc9024e1af
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 permalink: "/:title"
 paginate_path: "/pagina-:num"
@@ -25,3 +25,13 @@ paginate: 5
 timezone: America/Sao_Paulo
 
 gems: ["jekyll-paginate","jemoji"]
+
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

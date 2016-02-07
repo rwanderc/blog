@@ -42,7 +42,7 @@ I'm not attaching here the Main.class, which is only an interface with the appli
 
 #### StringGenerator.class
 
-{% highlight java %}
+``` java
 /**
  * The MIT License (MIT)
  *
@@ -102,4 +102,4 @@ public class StringGenerator {
     }
 
 }
-{% endhighlight %}
+```
