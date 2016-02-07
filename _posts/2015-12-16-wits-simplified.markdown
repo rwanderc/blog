@@ -13,7 +13,7 @@ Yeah, I know this is a very specific domain knowledge, and probably if you are n
 
 In this article, I will provide a little understanding of the **Wits** protocol. There are other transmission protocols, like [WitsML][witsml] that is newer, more powerful in some ways, but much more complex and dependant of good infrastructure. WitsML might be subject of other posts in the future, but keep in mind that Wits and WitsML are totally different protocols for the same purpose.
 
-#Wits
+# Wits
 
 > The WELLSITE INFORMATION TRANSFER SPECIFICATION (WITS) is a communications format used for the transfer of a wide variety of wellsite data from one computer system to another. It is a recommended format by which Operating and Service companies involved in the Exploration and Production areas of the Petroleum Industry may exchange data in either an online or batch transfer mode.
 
@@ -41,7 +41,7 @@ Both sides of the transmission need to be aligned about what record 01 item 08 m
 
 All the mapping needs to be known and well aligned between both sides, so as to prevent these kind of mistakes. And that's what turns Wits to be a little weak in terms of consistency, but in other hands very efficient in terms of flexibility.
 
-###Consistency and Flexibility
+### Consistency and Flexibility
 
 **Time is money!** The Oil & Gas operations are still very expensive, and operators push the service companies to be very optimized... One of the results of this pressure is seem in the lack of time and effort to make data transmission to be correct from the beginning. And, of course, **first thing's first**. Making sure the rig doesn't have a risky scenario is uncomparable more important than making transmission aligned.
 
@@ -49,7 +49,7 @@ In the end, it causes the transmission to be the last concern of the companies a
 
 However, being simple as 1 2 3 makes configuration of Wits a simple setup, as well as makes it easier to create new software to transmit it. Having this fact, associated to the protocol's maturity, the compatibility of the protocol with the industry is huge.
 
-##Versions
+## Versions
 
 There are some different versions of Wits but as per my experience the most widely used are Level 0 and Level 1. A big difference between these two is that Level 1 has twenty five predefined records and items identified, covering drilling, geology, directional work, MWD, cementing and testing. Having these pre-defined records makes a little easier to maintaing an aggreement between the sides.
 

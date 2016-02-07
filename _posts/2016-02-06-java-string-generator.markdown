@@ -36,7 +36,7 @@ This is a single class application, which has a method that returns the new Stri
 
 The application will iterate over an array of letters and numbers and will return the amount of requested characters.
 
-#Code
+# Code
 
 I'm not attaching here the Main.class, which is only an interface with the application. If necessary, visit my <i class="fa fa-github"></i> [GitHub][github] page.
 

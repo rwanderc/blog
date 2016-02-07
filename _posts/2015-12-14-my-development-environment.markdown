@@ -13,7 +13,7 @@ Hi there! This is the very first post of my blog, and I decided to start with my
 
 By the way, it all is only based in my personal opinion and perceptions, so run your own tests to base your project decisions.
 
-#Hardware
+# Hardware
 
 Nowadays, I have an old laptop, which is an Dell with Intel(R) Core(TM) i5-3337U CPU @ 1.80GHz, 6GB RAM, 1TB HD (not SSD) and a second monitor, with greater resolution to make sure I can run many windows without much effort.
 
@@ -21,13 +21,13 @@ I do have another computer, which is an old desktop, but I rarely use it. I plan
 
 I also have an external 2TB network hard drive, that I bought in a work trip, which I use to store my backups and prevent me from losing my projects, docs and pics, as well as it happened some times, some years ago. :sweat:
 
-#OS
+# OS
 
 In 2004 I started working to a government organization, and in 2005 I started running Linux at this organization. Since that time, I got completly immersed into this open source world, which was considerably new stuff for me. The main reason I got really immersed was not just because it's cheaper (sometimes it's not, though), but because of the concept at all: freedom to go deeper. I'm that kind of guy that enjoys more the way than the end... so I like to get deeper and deeper into learning to really understand and dominate it. So Linux turned to be a good system for me.
 
 On my current laptop, I only have Linux installed, which is a **CentOS 7**. I already used **Fedora** and **Ubuntu** with other laptops before, but I like the way **CentOS** provides me stability that can be replicated when deploying servers. I like to use **GNOME**, but for some reason I don't really remember quite well I use **KDE** as interface.
 
-#Development
+# Development
 
 I'm a **Java** programmer, even though I already programmed in C, Delphi, some Visual Basic, PHP and ASP (old school). So, my favorite IDE is **[NetBeans][netbeans]**. Currently I use version 8.0.1.
 
@@ -37,7 +37,7 @@ My prefered database system is MySQL, but I'm also learning MongoDB. Of course, 
 
 I also use **Subversion** and **Git** for versioning, but I'm new with git protocol.
 
-#IaaS
+# IaaS
 
 As I'm running some different projects, I also have some virtual machines over the internet, from Amazon AWS and also DigitalOcean. For computing, I found DigitalOcean cheaper, simpler and with excellent performance. Amazon AWS plan at the same price level has performance limitations that turn to be a pain when reached. However, for relational database, Amazon AWS RDS performs much better if compared to a self-managed RDBS deployed with DigitalOcean.
 
