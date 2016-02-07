@@ -19,7 +19,7 @@ gravatar_url: "https://en.gravatar.com/userimage/65982695/7e0f8f987bd6fc9024e1af
 markdown: kramdown
 highlighter: rouge
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-permalink: "/:title"
+permalink: "/:title/"
 paginate_path: "/pagina-:num"
 paginate: 5
 timezone: America/Sao_Paulo
