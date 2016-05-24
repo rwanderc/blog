@@ -1,4 +1,5 @@
 ---
+shorturl:    "http://goo.gl/D9Amn4"
 layout:      post
 title:       "WitsCounter"
 subtitle:    "counting Wits parameters throughput in real time"
@@ -7,6 +8,13 @@ date:        2016-01-04 20:04:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-rig.jpg"
 thumb-img:   "/img/thumb/thumb-java-witscounter.jpg"
+tags:
+- java
+- wits
+- oil
+- O&G
+- witsml
+- drilling
 ---
 
 [github]:https://github.com/rwanderc

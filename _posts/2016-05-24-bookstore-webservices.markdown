@@ -1,4 +1,5 @@
 ---
+shorturl:    "http://goo.gl/gdvgtj"
 layout:      post
 title:       "BookStore WebServices"
 subtitle:    "restful webservices with java and jersey"
@@ -7,6 +8,12 @@ date:        2016-05-24 14:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-bookstore.jpg"
 thumb-img:   "/img/thumb/thumb-bookstore.jpg"
+tags:
+- java
+- jersey
+- jetty
+- web service
+- webservice
 ---
 
 [github]:https://github.com/rwanderc

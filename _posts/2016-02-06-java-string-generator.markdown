@@ -1,4 +1,5 @@
 ---
+shorturl:    "http://goo.gl/PAZt9P"
 layout:      post
 title:       "String Generator"
 subtitle:    "how to generate strings programatically"
@@ -7,6 +8,11 @@ date:        2016-02-06 18:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-programming.jpg"
 thumb-img:   "/img/thumb/thumb-java-string-generator.jpg"
+tags:
+- java
+- string
+- generator
+- random
 ---
 
 [github]:https://github.com/rwanderc

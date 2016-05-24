@@ -1,4 +1,5 @@
 ---
+shorturl:    "http://goo.gl/fBxRii"
 layout:      post
 title:       "WitsGenerator"
 subtitle:    "an application to generate random Wits data"
@@ -7,6 +8,13 @@ date:        2015-12-19 04:43:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-rig.jpg"
 thumb-img:   "/img/thumb/thumb-java-witsgenerator.jpg"
+tags:
+- java
+- wits
+- witsml
+- oil
+- O&G
+- drilling
 ---
 
 [github]:https://github.com/rwanderc

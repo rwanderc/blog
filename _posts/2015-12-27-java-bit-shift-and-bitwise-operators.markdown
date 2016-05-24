@@ -1,4 +1,5 @@
 ---
+shorturl:    "http://goo.gl/TxLPd7"
 layout:      post
 title:       "Bit Shift & Bitwise"
 subtitle:    "straightforward operations over binary in Java"
@@ -7,6 +8,11 @@ date:        2015-12-27 20:10:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-binary.jpg"
 thumb-img:   "/img/thumb/thumb-java-bit-shift-and-bitwise-operators.jpg"
+tags:
+- java
+- bit
+- bitwise
+- bit shift
 ---
 
 **Bit Shift** and **Bitwise** are operators that make **binary calculations** perfectly straightforward.

@@ -1,4 +1,5 @@
 ---
+shorturl:    "http://goo.gl/vp9vUF"
 layout:      post
 title:       "Two's Complement"
 subtitle:    "how signed integer numbers are represented in binary"
@@ -7,6 +8,11 @@ date:        2015-12-27 20:05:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-twos-complement.jpg"
 thumb-img:   "/img/thumb/thumb-twos-complement.jpg"
+tags:
+- java
+- two's complement
+- complement
+- bitwise
 ---
 
 Have you ever thought about how numbers are represented in your computer? We all know that computers "talk" in binary, but how exactly does it work?
