@@ -1,6 +1,6 @@
 # Site settings
 title: Wander Costa
-header-img: img/home-bg.jpg
+header-img: img/home-bg-coffee.jpg
 email: contact@wandercosta.com
 description: "This is my personal blog, where I post my thougths about technology, software developement, and whatever I find interesting!"
 baseurl: ""
@@ -24,7 +24,10 @@ paginate_path: "/pagina-:num"
 paginate: 5
 timezone: America/Sao_Paulo
 
-gems: ["jekyll-paginate","jemoji"]
+gems: [
+  "jekyll-paginate",
+  "jemoji"
+]
 
 rdiscount:
   extensions: []
