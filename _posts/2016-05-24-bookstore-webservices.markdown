@@ -32,7 +32,7 @@ For this application, I will use the following softwares, however Maven will tak
 This software is licensed under the MIT license, what basically means that you can use it for any purpose ___without any warranty___. :warning:
 
 
-# Architeture
+# Architecture
 
 This application will be able to provide the features of querying, adding, updating and deleting books. All transactions will be available in JSON format.
 
@@ -83,7 +83,7 @@ Continuing with the other dependencies, we are using Jackson to provide the impl
 
 <script src="https://gist.github.com/rwanderc/1fc31c09cc3ebc3715abff7ff7376764.js"></script>
 
-And finally Lombok (which I recommend to always use in all projects), to provide less code and more funcionality.
+And finally Lombok (which I recommend to always use in all projects), to provide less code and more functionality.
 
 <script src="https://gist.github.com/rwanderc/0b256d4480e6c12ec3a9a188a729aa60.js"></script>
 
@@ -94,7 +94,7 @@ After all dependencies added, our dependencies tag will be like this.
 
 ### Configuring the build
 
-As previously informed, we avoided Netbeans to configure a Server for the project. THe reason is that we will not only configure Maven to manage the build, but we will also configure it to manage the deploy. To do so, we will add a build plug-in into the tag **build** >> **plugins** in the **pom.xml**. Once done, Maven will use this plug-in to run the project, and Netbeans will not be responsible for this task any more.
+As previously informed, we avoided Netbeans to configure a Server for the project. The reason is that we will not only configure Maven to manage the build, but we will also configure it to manage the deploy. To do so, we will add a build plug-in into the tag **build** >> **plugins** in the **pom.xml**. Once done, Maven will use this plug-in to run the project, and Netbeans will not be responsible for this task any more.
 
 <script src="https://gist.github.com/rwanderc/c630e0c3da556b5b91738d5a38f27a04.js"></script>
 
