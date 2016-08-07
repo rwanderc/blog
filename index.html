@@ -1,15 +1,11 @@
 ---
 layout: page
-description: "because coffee is a programming language itself"
+description: "everything between code and coffee is allowed..."
 ---
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-    {% if (post.shorturl != nil and post.shorturl != "")  %}
-    <a href="{{ post.shorturl }}">
-    {% else %}
     <a href="{{ post.url | prepend: site.baseurl }}">
-    {% endif %}
         <h2 class="post-title">{{ post.title }}</h2>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
@@ -17,14 +13,6 @@ description: "because coffee is a programming language itself"
         </h3>
         {% endif %}
     </a>
-    {% if post.category %}
-    <span class="post-category">{{ post.category }}</span> 
-    {% endif %}
-    <span class="post-tags">
-    {% for tag in post.tags%}
-        {{ tag }}       
-    {% endfor %}
-    </span>
     <p class="post-meta">Posted by {% if post.author %} {{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
 <hr>
