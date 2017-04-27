@@ -18,7 +18,7 @@ tags:
 ---
 
 [github]:https://github.com/rwanderc
-[code]:https://github.com/rwanderc/WitsGenerator
+[code]:https://github.com/rwanderc/wits-generator
 
 Carrying on with the context of Oil & Gas, in this post I will share a very simple Java application to stream random Wits data, provided through a TCP Socket Server to a single client.
 
