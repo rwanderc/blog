@@ -76,14 +76,14 @@ It means that, if you want to consume the generated data from a slow or unstable
 # Code
 I'm not attaching here the Main.class. If necessary, visit my <i class="fa fa-github"></i> [GitHub][github] page.
 
-#### WitsServer.class
+#### WitsServer.java
 <script src="https://gist.github.com/rwanderc/375a333b53e5201f879af7a8f69a47f3.js"></script>
 
-#### TcpServer.class
+#### TcpServer.java
 <script src="https://gist.github.com/rwanderc/24309ba01c8292f39ce4100bd7fddc3d.js"></script>
 
-#### WitsGenerator.class
+#### WitsGenerator.java
 <script src="https://gist.github.com/rwanderc/c2a67e2c1c326f659c2c8bacc6c32b96.js"></script>
 
-#### WitsLineGenerator.class
+#### WitsLineGenerator.java
 <script src="https://gist.github.com/rwanderc/bbaa7811ae1071b75cf21b6ccee5917c.js"></script>
