@@ -1,6 +1,6 @@
 ---
 layout:      post
-title:       "Lombok"
+title:       "Lombok Getters and Setters"
 subtitle:    "fed up with getters and setters in java?"
 description: "Fed up with getters and setters in java?"
 date:        2016-08-08 01:56:00
