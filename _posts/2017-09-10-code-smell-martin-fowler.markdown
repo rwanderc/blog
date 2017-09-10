@@ -18,7 +18,7 @@ Este é um post escrito em Português, como uma tradução livre do artigo [Code
 
 > #### CodeSmell ######
 > Martin Fowler<br>
-> 9 February 2006
+> 9 de Fevereiro de 2006
 >
 >
 > CodeSmell é uma indicação superficial que geralmente corresponde a um problema maior no sistema. O termo foi criado por Kent Beck enquanto me ajudava com o meu livro [Refactoring][refactoring].
