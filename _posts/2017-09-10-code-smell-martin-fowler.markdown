@@ -21,7 +21,7 @@ Este é um post escrito em Português, como uma tradução livre do artigo [Code
 > 9 de Fevereiro de 2006
 >
 >
-> CodeSmell é uma indicação superficial que geralmente corresponde a um problema maior no sistema. O termo foi criado por Kent Beck enquanto me ajudava com o meu livro [Refactoring][refactoring].
+> Um **code smell** (ou **cheiro no código**, em Português) é uma indicação superficial que geralmente corresponde a um problema maior no sistema. O termo foi criado por Kent Beck enquanto me ajudava com o meu livro [Refactoring][refactoring].
 > 
 > A definição acima contém alguns pontos sutis. Em primeiro lugar, **smell** (ou **cheiro**, em Português) é, por definição, algo que é rápido de ser detectado - ou **fareijável** como já escrevi recentemente. Um método longo é um bom exemplo disso - apenas olhando para o código e meu nariz já se contrai se eu vejo mais de uma dúzia de linhas de java.
 > 
