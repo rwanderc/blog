@@ -19,7 +19,7 @@ tags:
 
 [github]:https://github.com/rwanderc
 [git-witscounter]:https://github.com/rwanderc/wits-counter
-[blog-witsgenerator]:./java-witsgenerator
+[blog-witsgenerator]:../java-witsgenerator
 
 Recently, I published a post of an application called [WitsGenerator][blog-witsgenerator] to provide random Wits data through a TCP port. Today I'm publishing another application related to the Oil & Gas business, but now it's to count the amount of parameters being transmitted through Wits.
 
