@@ -21,7 +21,7 @@ highlighter: rouge
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "vendor"]
 permalink: "/:title/"
 paginate_path: "/pagina-:num"
-paginate: 5
+paginate: 10
 timezone: America/Sao_Paulo
 
 gems: [
