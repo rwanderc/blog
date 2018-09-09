@@ -12,7 +12,7 @@ tags:
 - productivity
 ---
 
-In a [previous post][previouspost], we talked about the use of Lombok to provide quick and easy getters and setters.
+In the post [Lombok Getters and Setters][gettersandsetters], we talked about the use of Lombok to provide quick and easy getters and setters.
 
 In this post, I will cover another great feature from Lombok, that provides quick and easy constructors. For this post, I will use Lombok `v1.16.16`.
 
@@ -38,4 +38,4 @@ The `@RequiredArgsConstructor` works the same way as `@AllArgsConstructor`. Howe
 ### Conclusion
 Once more, we use Lombok to reduce boilerplate code in our applications. We can make use of this features to increase readability of our classes.
 
-[previouspost]:http://www.wandercosta.com/lombok/
+[gettersandsetters]:http://www.wandercosta.com/lombok/
