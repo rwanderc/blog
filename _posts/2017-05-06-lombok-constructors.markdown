@@ -38,5 +38,4 @@ The `@RequiredArgsConstructor` works the same way as `@AllArgsConstructor`. Howe
 ### Conclusion
 Once more, we use Lombok to reduce boilerplate code in our applications. We can make use of this features to increase readability of our classes.
 
-[lombok]:http://www.wandercosta.com/lombok/
-[previouspost]:https://projectlombok.org
+[previouspost]:http://www.wandercosta.com/lombok/
