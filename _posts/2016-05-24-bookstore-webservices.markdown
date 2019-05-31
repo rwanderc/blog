@@ -8,7 +8,6 @@ date:        2016-05-24 14:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-bookstore.jpg"
 thumb-img:   "/img/thumb/thumb-bookstore.jpg"
-category:    "qlqr coisa"
 tags:
 - java
 - jersey
@@ -23,9 +22,9 @@ tags:
 
 In this post I will explain step-by-step how to create a  simple **BookStore** with RESTful WebServices.
 
-This [code][github-project] is also available in my <i class="fa fa-github"></i> [GitHub][github] page. Feel free to comment if you have any doubt or suggestion. :smile:
+This [code][github-project] is also available in my <i class="fa fa-github"></i> [GitHub][github] page. Feel free to comment if you have any doubt or suggestion. :smile:<!--more-->
 
-For this application, I will use the following softwares:
+For this application, I will use the following software:
 
 * Java JDK 8u73;
 * NetBeans IDE 8.1 (Build 201510222201);
@@ -172,7 +171,7 @@ However, you can also return a personalized entity, decreasing the amount of nec
 Now you can compile and deploy the project. Jetty must be able to initialize everything and the services will start.
 You can run from the Jetty plugin with the following command: `mvn jetty:run`.
 
-To interact with the service, you can use [Postman][postman], which is a very usefull Chrome plug-in to access RESTful services, or you can run the following cURL commands directly from bash:
+To interact with the service, you can use [Postman][postman], which is a very useful Chrome plug-in to access RESTful services, or you can run the following cURL commands directly from bash:
 
 
 #### Get all ####

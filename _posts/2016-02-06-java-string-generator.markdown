@@ -1,9 +1,9 @@
 ---
 shorturl:    "http://goo.gl/PAZt9P"
 layout:      post
-title:       "String Generator"
-subtitle:    "how to generate strings programatically"
-description: "How to generate Strings programatically."
+title:       "Simple String Generator"
+subtitle:    "how to generate random strings programmatically"
+description: "how to generate random strings programmatically"
 date:        2016-02-06 18:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-programming.jpg"
@@ -13,6 +13,7 @@ tags:
 - string
 - generator
 - random
+- basics
 ---
 
 [github]:https://github.com/rwanderc
@@ -24,7 +25,7 @@ It's usually necessary to have a way to produce random strings programmatically:
 * Produce random passwords;
 * Produce random patterns, etc.
 
-Today, I will show you a very quick way to create those strings for studying purpose or as a simple solution.
+Today, I will show you a very quick way to create those strings for studying purpose or as a simple solution.<!--more-->
 
 However, __I do really recommend__ you to use `RandomStringUtils` API from Apache library `commons-lang3` to use in your projects for production. This library covers many possibilities and you will avoid adding any unnecessary class into your project. The library can be added into your `pom.xml` with the following dependency.
 
@@ -45,7 +46,7 @@ This [code][git-stringgenerator] is also available in my <i class="fa fa-github"
 
 This software is licensed under the MIT license, what basically means that you can use it for any purpose ___without any warranty___. :warning:
 
-# Architeture
+# Architecture
 
 This is a single class application, which has a method that returns the new String, or throws an exception `IllegalArgumentException` in case the length requested is not greater than 0.
 

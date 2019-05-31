@@ -13,15 +13,16 @@ tags:
 - bit
 - bitwise
 - bit shift
+- basics
 ---
 
 **Bit Shift** and **Bitwise** are operators that make **binary calculations** perfectly straightforward.
 
-Until few months ago, I had never used bitwise operators, and my impression is that both are indeed not even known by most developers.
+Until few months ago, I had never used bitwise operators, and my impression is that both are indeed not even known by most developers.<!--more-->
 
 These operators provide a great must-know solution for specific problems, like network calculations (IP & netmask); privileges processing based in bit fields; communication involving checksums, parity, flow control (e.g.: serial communication); compression; encryption, etc.
 
-The performance is another important point. Instead of implementing more complex algorithms, binary processing can be done with the minimun effort, since **bitwise** and **bit shift** are primitive operations **directly supported by processors**.
+The performance is another important point. Instead of implementing more complex algorithms, binary processing can be done with the minimum effort, since **bitwise** and **bit shift** are primitive operations **directly supported by processors**.
 
 The operators are:
 
@@ -136,7 +137,7 @@ Thus, we conclude that Signed Right Shift keeps the signal. In other words, it s
 
 Unsigned Right Shift `>>>` is the operator to shift bits to the right, not considering the signal.
 
-The behavior is the same as the Signed Right Shift, with only an excepion: the bit added to the left is ALWAYS zero. Let's take the last example of Signed Right Shift:
+The behavior is the same as the Signed Right Shift, with only an exception: the bit added to the left is ALWAYS zero. Let's take the last example of Signed Right Shift:
 
 Let `C` be a `short` with value `-32768`.
 

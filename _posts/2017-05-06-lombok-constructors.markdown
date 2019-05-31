@@ -14,7 +14,7 @@ tags:
 
 In the post [Lombok Getters and Setters][gettersandsetters], we talked about the use of Lombok to provide quick and easy getters and setters.
 
-In this post, I will cover another great feature from Lombok, that provides quick and easy constructors. For this post, I will use Lombok `v1.16.16`.
+In this post, I will cover another great feature from Lombok, that provides quick and easy constructors. For this post, I will use Lombok `v1.16.16`.<!--more-->
 
 In Lombok, we have 3 different annotations to deal with constructors:
 

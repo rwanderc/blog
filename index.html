@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "everything between code and coffee is allowed..."
+description: "co-founder of @wideping | software engineer at @mytaxi<br><b>sometimes writing, always coding</b>"
 ---
 
 {% for post in paginator.posts %}
@@ -13,7 +13,23 @@ description: "everything between code and coffee is allowed..."
         </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Posted by {% if post.author %} {{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-meta">
+        {{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;
+        {% assign words = post.content | number_of_words %}
+        {{ post.content | number_of_words }} words&nbsp;&nbsp;&nbsp;
+        {% if words < 360 %}
+            1 minute reading
+        {% else %}
+            {{ words | divided_by:180 }} minutes reading
+        {% endif %}&nbsp;&nbsp;&nbsp;
+        {% assign url = site.baseurl %}
+        <a href="{{ post.url | prepend: url }}#disqus_thread">Post a comment</a>
+    </p>
+    <spam class="post-text-preview">
+        {% if post.excerpt %}
+            {{ post.excerpt }}
+        {% endif %}
+    </spam>
 </div>
 <hr>
 {% endfor %}

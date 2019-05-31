@@ -21,7 +21,7 @@ tags:
 [code]:https://github.com/rwanderc/wits-generator
 [wits-simplified]:http://www.wandercosta.com/wits-simplified/
 
-Carrying on in the context of Oil & Gas, in this post I will share a very simple Java application to stream random Wits data, provided through a TCP Socket Server to a single client. If you are new to Wits protocol, please visit my previous post, [Wits Simplified][wits-simplified].
+Carrying on in the context of Oil & Gas, in this post I will share a very simple Java application to stream random Wits data, provided through a TCP Socket Server to a single client. If you are new to Wits protocol, please visit my previous post, [Wits Simplified][wits-simplified].<!--more-->
 
 For this project, I'm using:
 

@@ -34,6 +34,9 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+hr {
+  border-top: 1px solid #bbb;
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -155,7 +158,7 @@ hr.small {
 
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
-    padding: 75px 0;
+    padding: 30% 0;
   }
   .intro-header .post-heading,
   .intro-header .page-heading {
@@ -241,17 +244,30 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
-  font-size: 18px;
-  font-style: italic;
+  color: #888;
+  font-size: 16px;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: #888;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
+  color: #0085a1;
+  text-decoration: underline;
+}
+.post-preview > .post-text-preview {
+  color: #444;
+  font-size: 17px;
+  text-decoration: none;
+  margin-top: 0;
+}
+.post-preview > .post-text-preview > a {
+  color: #404040;
+}
+.post-preview > .post-text-preview > a:hover,
+.post-preview > .post-text-preview > a:focus {
   color: #0085a1;
   text-decoration: underline;
 }

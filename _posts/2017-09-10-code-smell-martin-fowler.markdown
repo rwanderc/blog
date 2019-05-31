@@ -14,7 +14,7 @@ tags:
 
 This is a post written in Portuguese, as a free translation of [Martin Fowler][martinfowler]'s article [CodeSmell][codesmell]. Translated on September 10, 2017.
 
-Este é um post escrito em Português, como uma tradução livre do artigo [CodeSmell][codesmell] de [Martin Fowler][martinfowler]. Traduzido em 10 de Setembro de 2017.
+Este é um post escrito em Português, como uma tradução livre do artigo [CodeSmell][codesmell] de [Martin Fowler][martinfowler]. Traduzido em 10 de Setembro de 2017.<!--more-->
 
 > #### CodeSmell ######
 > Martin Fowler<br>

@@ -1,8 +1,8 @@
 # Site settings
 title: WanderCosta
-header-img: img/home-bg-coffee.jpg
+header-img: img/home-bg-bridge.jpg
 email: contact@wandercosta.com
-description: "This is my personal blog, where I post my thougths about technology, software developement, and whatever I find interesting!"
+description: "co-founder of @wideping | software engineer at @mytaxi<br><b>sometimes writing, always coding</b>"
 baseurl: ""
 url: "http://www.wandercosta.com"
 comments: true
@@ -10,7 +10,6 @@ comments: true
 # Social
 twitter_username: rwanderc
 github_username: rwanderc
-#facebook_username: rwanderc
 linkedin_username: rwander
 analytics_id: UA-70100612-2
 gravatar_url: "https://en.gravatar.com/userimage/65982695/7e0f8f987bd6fc9024e1afc83c70cf4f.png?size=150"
@@ -18,11 +17,13 @@ gravatar_url: "https://en.gravatar.com/userimage/65982695/7e0f8f987bd6fc9024e1af
 # Build settings
 markdown: kramdown
 highlighter: rouge
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "vendor"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "vendor", "export.xml", "feed.xml"]
 permalink: "/:title/"
 paginate_path: "/pagina-:num"
-paginate: 10
+paginate: 20
 timezone: America/Sao_Paulo
+
+excerpt_separator: <!--more-->
 
 gems: [
   "jekyll-paginate",

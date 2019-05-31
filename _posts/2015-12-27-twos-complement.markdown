@@ -13,11 +13,12 @@ tags:
 - two's complement
 - complement
 - bitwise
+- basics
 ---
 
 Have you ever thought about how numbers are represented in your computer? We all know that computers "talk" in binary, but how exactly does it work?
 
-In this post, I will briefly introduce **Two's Complement**, which is the way signed integer numbers are represented. Signed data type are data types that support representation of negative and positive values.
+In this post, I will briefly introduce **Two's Complement**, which is the way signed integer numbers are represented. Signed data type are data types that support representation of negative and positive values.<!--more-->
 
 In the following examples, I will use Java 7 data types for explanations. Java 8 SE provides some differences in `int` types, that will not be considered.
 

@@ -21,7 +21,7 @@ tags:
 [git-witscounter]:https://github.com/rwanderc/wits-counter
 [blog-witsgenerator]:../java-witsgenerator
 
-Recently, I published a post of an application called [WitsGenerator][blog-witsgenerator] to provide random Wits data through a TCP port. Today I'm publishing another application related to the Oil & Gas business, but now it's to count the amount of parameters being transmitted through Wits.
+Recently, I published a post of an application called [WitsGenerator][blog-witsgenerator] to provide random Wits data through a TCP port. Today I'm publishing another application related to the Oil & Gas business, but now it's to count the amount of parameters being transmitted through Wits.<!--more-->
 
 For this project, I'm using:
 
