@@ -44,6 +44,9 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   background: white;
   position: absolute;
   top: 0;
