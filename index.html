@@ -6,36 +6,55 @@ menu: "true"
 description: "co-founder of @wideping | software engineer at @mytaxi<br><b>sometimes writing, always coding</b>"
 ---
 
+{% assign i = 0 %}
 {% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">{{ post.title }}</h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">
-        {{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;
-        {% assign words = post.content | number_of_words %}
-        {{ post.content | number_of_words }} words&nbsp;&nbsp;&nbsp;
-        {% if words < 240 %}
-            1 minute reading
-        {% else %}
-            {{ words | divided_by:180 }} minutes reading
-        {% endif %}&nbsp;&nbsp;&nbsp;
-        {% assign url = site.baseurl %}
-        <a href="{{ post.url | prepend: url }}#disqus_thread">Post a comment</a>
-    </p>
-    <spam class="post-text-preview">
-        {% if post.excerpt %}
-            {{ post.excerpt }}
-        {% endif %}
-    </spam>
+
+{% if i == 0 %}
+<div class="col-lg-12">
+{% endif %}
+    <div class="post-preview col-lg-6">
+        <img src="{{ post.header-img }}" width="300" class="thumb-img">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">
+                {{ post.subtitle }}
+            </h3>
+            {% endif %}
+        </a>
+        <p class="post-meta">
+            {{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;
+            {% assign words = post.content | number_of_words %}
+            {{ post.content | number_of_words }} words&nbsp;&nbsp;&nbsp;
+            {% if words < 240 %}
+                1 minute reading
+            {% else %}
+                {{ words | divided_by:180 }} minutes reading
+            {% endif %}&nbsp;&nbsp;&nbsp;
+            {% assign url = site.baseurl %}
+            <a href="{{ post.url | prepend: url }}#disqus_thread">Post a comment</a>
+        </p>
+        <!--<spam class="post-text-preview">-->
+            <!--{% if post.excerpt %}-->
+                <!--{{ post.excerpt }}-->
+            <!--{% endif %}-->
+        <!--</spam>-->
+    </div>
+{% if i == 1 %}
 </div>
-<hr>
+{% endif %}
+
+{% if i == 0 %}
+{% assign i = 1 %}
+{% else %}
+{% assign i = 0 %}
+{% endif %}
+
 {% endfor %}
+
+{% if i == 1 %}
+</div>
+{% endif %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}

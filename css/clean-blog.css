@@ -241,14 +241,18 @@ hr.small {
   color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
+  font-size: 28px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 .post-preview > a > .post-subtitle {
+  font-size: 22px;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
+}
+.post-preview > img {
+  width: 200px;
 }
 .post-preview > .post-meta {
   color: #888;
@@ -280,7 +284,14 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 28px;
+  }
+  .post-preview > a > .post-subtitle {
+    font-size: 22x;
+  }
+
+  .post-preview > img {
+    width: 300px;
   }
 }
 .section-heading {
@@ -431,6 +442,12 @@ img::selection {
 img::-moz-selection {
   color: white;
   background: transparent;
+}
+.thumb-img {
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.15) !important;
+    border-image: initial !important;
 }
 body {
   webkit-tap-highlight-color: #0085a1;

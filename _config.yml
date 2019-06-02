@@ -20,7 +20,7 @@ highlighter: rouge
 exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md", "vendor"]
 permalink: "/:title/"
 paginate_path: "/pagina-:num"
-paginate: 20
+paginate: 14
 timezone: America/Sao_Paulo
 
 excerpt_separator: <!--more-->
