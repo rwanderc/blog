@@ -20,7 +20,7 @@ description: "co-founder of @wideping | software engineer at @mytaxi<br><b>somet
         {{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;
         {% assign words = post.content | number_of_words %}
         {{ post.content | number_of_words }} words&nbsp;&nbsp;&nbsp;
-        {% if words < 360 %}
+        {% if words < 240 %}
             1 minute reading
         {% else %}
             {{ words | divided_by:180 }} minutes reading
