@@ -16,7 +16,7 @@ layout: default
                         {{ page.date | date_to_string }}&nbsp;&nbsp;&nbsp;
                         {% assign words = page.content | number_of_words %}
                         {{ page.content | number_of_words }} words&nbsp;&nbsp;&nbsp;
-                        {% if words < 360 %}
+                        {% if words < 240 %}
                             1 minute reading
                         {% else %}
                         {{ words | divided_by:180 }} minutes reading
