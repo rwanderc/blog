@@ -6,7 +6,7 @@ description: "easy constructors with lombok"
 date:        2017-05-06 01:56:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-lombok.jpg"
-thumb-img:   "/img/thumb/thumb-lombok.jpg"
+thumb-img:   "/img/post-thumb-lombok.jpg"
 tags:
 - constructor
 - productivity

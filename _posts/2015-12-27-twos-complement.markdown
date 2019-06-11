@@ -7,7 +7,7 @@ description: "Briefly explanation of how signed integer numbers are represented 
 date:        2015-12-27 20:05:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-twos-complement.jpg"
-thumb-img:   "/img/thumb/thumb-twos-complement.jpg"
+thumb-img:   "/img/post-thumb-twos-complement.jpg"
 tags:
 - java
 - two's complement

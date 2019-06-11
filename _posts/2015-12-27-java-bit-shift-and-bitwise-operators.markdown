@@ -7,7 +7,7 @@ description: "Using bitwise and bit shift operators in Java to execute straightf
 date:        2015-12-27 20:10:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-binary.jpg"
-thumb-img:   "/img/thumb/thumb-java-bit-shift-and-bitwise-operators.jpg"
+thumb-img:   "/img/post-thumb-binary.jpg"
 tags:
 - java
 - bit

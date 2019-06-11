@@ -7,7 +7,7 @@ description: "how to generate random strings programmatically"
 date:        2016-02-06 18:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-programming.jpg"
-thumb-img:   "/img/thumb/thumb-java-string-generator.jpg"
+thumb-img:   "/img/post-thumb-programming.jpg"
 tags:
 - java
 - string

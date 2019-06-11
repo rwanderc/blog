@@ -6,8 +6,10 @@ subtitle:    "counting Wits parameters throughput in real time"
 description: "A Java application to count Wits parameters throughput in real time."
 date:        2016-01-04 20:04:00
 author:      "Wander Costa"
-header-img:  "/img/post-bg-rig.jpg"
-thumb-img:   "/img/thumb/thumb-java-witscounter.jpg"
+header-img:  "/img/post-bg-rig2.jpg"
+thumb-img:   "/img/post-thumb-rig2.jpg"
+img-credits: "Winter"
+img-credits-url: https://www.freepik.com/free-photos-vectors/winter
 tags:
 - java
 - wits

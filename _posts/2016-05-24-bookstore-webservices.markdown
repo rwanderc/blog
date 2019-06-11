@@ -7,7 +7,7 @@ description: "RESTful WebServices with Java and Jersey."
 date:        2016-05-24 14:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-bookstore.jpg"
-thumb-img:   "/img/thumb/thumb-bookstore.jpg"
+thumb-img:   "/img/post-thumb-bookstore.jpg"
 tags:
 - java
 - jersey

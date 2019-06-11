@@ -231,6 +231,12 @@ hr.small {
 .intro-header .post-heading .meta a {
   color: white;
 }
+.intro-header .img-credits {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: white;
+}
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
     font-size: 55px;

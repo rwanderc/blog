@@ -7,7 +7,7 @@ description: "A Java command-line application to generate random Wits data."
 date:        2015-12-19 04:43:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-rig.jpg"
-thumb-img:   "/img/thumb/thumb-java-witsgenerator.jpg"
+thumb-img:   "/img/post-thumb-rig.jpg"
 tags:
 - java
 - wits

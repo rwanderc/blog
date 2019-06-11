@@ -28,6 +28,12 @@ layout: default
             </div>
         </div>
     </div>
+    <center>
+    <p class="img-credits">
+        {% if page.img-credits %}
+        Image by <a href="{{ page.img-credits-url }}">{{ page.img-credits }}</a>
+        {% endif %}
+    </p></center>
 </header>
 
 <!-- Post Content -->

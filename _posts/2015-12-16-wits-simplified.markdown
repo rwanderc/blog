@@ -7,7 +7,7 @@ description: "Understanding data transmission in Oil & Gas operations, from a de
 date:        2015-12-16 18:12:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-rig.jpg"
-thumb-img:   "/img/thumb/thumb-wits-simplified.jpg"
+thumb-img:   "/img/post-thumb-rig.jpg"
 tags:
 - java
 - wits

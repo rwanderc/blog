@@ -6,7 +6,7 @@ description: "CodeSmell de Martin Fowler em Português"
 date:        2017-09-10 08:58:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-codesmell.jpg"
-thumb-img:   "/img/thumb/thumb-codesmell.jpg"
+thumb-img:   "/img/post-thumb-codesmell.jpg"
 tags:
 - code smell
 - refactoring

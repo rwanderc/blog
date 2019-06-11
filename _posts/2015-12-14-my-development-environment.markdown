@@ -7,7 +7,7 @@ description: "The perspective of a software engineer about his development envir
 date:        2015-12-14 13:56:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-my-development-environment.jpg"
-thumb-img:   "/img/thumb/thumb-my-development-environment.jpg"
+thumb-img:   "/img/post-thumb-my-development-environment.jpg"
 tags:
 - development
 - software

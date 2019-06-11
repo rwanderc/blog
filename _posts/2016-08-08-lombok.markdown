@@ -6,7 +6,7 @@ description: "Fed up with getters and setters in java?"
 date:        2016-08-08 01:56:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-lombok.jpg"
-thumb-img:   "/img/thumb/thumb-lombok.jpg"
+thumb-img:   "/img/post-thumb-lombok.jpg"
 tags:
 - getter
 - setter
