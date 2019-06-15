@@ -17,7 +17,7 @@ tags:
 ---
 
 [github]:https://github.com/rwanderc
-[git-stringgenerator]:https://github.com/rwanderc/string-generator
+[git-stringgenerator]:https://github.com/rwanderc/examples/tree/master/string-generator
 
 It's usually necessary to have a way to produce random strings programmatically:
 

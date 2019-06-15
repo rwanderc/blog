@@ -17,7 +17,7 @@ tags:
 ---
 
 [github]:https://github.com/rwanderc
-[github-project]:https://github.com/rwanderc/book-store
+[github-project]:https://github.com/rwanderc/examples/tree/master/jersey/jersey-book-store
 [postman]:http://www.getpostman.com/
 
 In this post I will explain step-by-step how to create a  simple **BookStore** with RESTful WebServices.
