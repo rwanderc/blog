@@ -7,7 +7,7 @@ date:        2017-05-06 01:56:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-lombok.jpg"
 thumb-img:   "/img/post-thumb-lombok.jpg"
-social-img:  "/img/post-lombok-400x400.jpg"
+social-img:  "/img/post-bg-lombok.jpg"
 tags:
 - constructor
 - productivity
