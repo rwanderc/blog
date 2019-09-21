@@ -15,6 +15,8 @@ tags:
 - clean code
 - spring boot
 - spring
+- rest
+- microservices
 - software engineering
 - software development
 - development
