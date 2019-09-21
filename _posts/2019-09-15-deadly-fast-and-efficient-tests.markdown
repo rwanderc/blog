@@ -7,6 +7,9 @@ date:        2019-09-15 22:00:00
 author:      "Wander Costa"
 header-img:  "/img/post-bg-clock.jpg"
 thumb-img:   "/img/post-thumb-clock.jpg"
+img-credits: "rawpixel.com"
+img-credits-url: https://www.freepik.com/free-photos-vectors/businesss
+img-credits-real-url: https://www.freepik.com/free-vector/devices_2945063.htm#page=1&query=clock&position=1
 tags:
 - unit tests
 - unit
