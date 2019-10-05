@@ -9,6 +9,7 @@ description: "co-founder of @wideping<br>software engineer at @FreeNow_DE<br><br
 {% assign i = 0 %}
 {% for post in paginator.posts %}
 
+{% if post.hide != "true" %}
 {% if i == 0 %}
 <div class="col-lg-12">
 {% endif %}
@@ -52,6 +53,7 @@ description: "co-founder of @wideping<br>software engineer at @FreeNow_DE<br><br
 {% assign i = 0 %}
 {% endif %}
 
+{% endif %}
 {% endfor %}
 
 {% if i == 1 or i == 2 %}
