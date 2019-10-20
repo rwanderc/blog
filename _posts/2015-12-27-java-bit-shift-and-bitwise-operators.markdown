@@ -47,7 +47,7 @@ Let `A` be an `int` with value `18`:
 * `0000 0000 0000 0000 0000 0000 0001 0010` represents A, which is 18;
 * `1111 1111 1111 1111 1111 1111 1110 1101` represents ~A, which is -19 in [Two's Complement][twos-complement].
 
-All bits were inverted, thus turning `0` to `1` and `1` to `0`. Because of the [Two's Complement][twos-complement] architecture, every ~X will be $$-X - 1$$.
+All bits were inverted, thus turning `0` to `1` and `1` to `0`. Because of the [Two's Complement][twos-complement] architecture, every `~X` will be `-X-1`.
 
 ### `&` Bitwise AND
 
@@ -151,7 +151,7 @@ It results in always producing a positive value, which is the square root of the
 
 Shifts in binary representations are shortcuts to calculate powers of 2 and square roots, ONLY IF it does not modify the most significant bit.
 
-When shifting A to the left in one position, if the most significant bit is not modified, the result will be $$ A^2 $$. When shifting A to the right in one position, if the most significant bit is not modified, the result will be $$ \sqrt A $$.
+When shifting A to the left in one position, if the most significant bit is not modified, the result will be `A^2`. When shifting A to the right in one position, if the most significant bit is not modified, the result will be `sqrt(A)`.
 
 
 [twos-complement]: http://www.wandercosta.com/twos-complement

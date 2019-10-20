@@ -30,10 +30,10 @@ This is one of the main reasons of the existence of different data types. Even w
 
 In Java, for example, the primitive type:
 
-* `byte` is signed, 8 bits long ($$ -(2^{8}) $$ to $$ (2^{8} - 1) $$);
-* `short` is signed, 16 bits long ($$ -(2^{16}) $$ to $$ (2^{16} - 1) $$);
-* `int` is signed, 32 bits long ($$ -(2^{32}) $$ to $$ (2^{32} - 1) $$);
-* `long` is signed, 64 bits long ($$ -(2^{64}) $$ to $$ (2^{64} - 1) $$).
+* `byte` is signed, 8 bits long (`-(2^8)` to `2^8 - 1`);
+* `short` is signed, 16 bits long (`-(2^16)` to `2^16 - 1`);
+* `int` is signed, 32 bits long (`-(2^32)` to `2^32 - 1`);
+* `long` is signed, 64 bits long (`-(2^64)` to `2^64 - 1`).
 
 C, however, has both signed and unsigned version of the above primitive types, and its `long` is 32 bits long.
 
@@ -42,8 +42,8 @@ C, however, has both signed and unsigned version of the above primitive types, a
 By default, integers `int` are signed 32 bits long, represented in two's complement, what means that it has the following limits:
 
 * `0000 0000 0000 0000 0000 0000 0000 0000` represents `0`;
-* `0111 1111 1111 1111 1111 1111 1111 1111` represents `2,147,483,647` ($$ 2^{31}-1 $$);
-* `1000 0000 0000 0000 0000 0000 0000 0000` represents `-2,147,483,648` ($$ - (2^{32}) $$);
+* `0111 1111 1111 1111 1111 1111 1111 1111` represents `2,147,483,647` (`2^31 - 1`);
+* `1000 0000 0000 0000 0000 0000 0000 0000` represents `-2,147,483,648` (`-(2^32)`);
 * `1111 1111 1111 1111 1111 1111 1111 1111` represents `-1`.
 
 All the other three primitives that use Two's Complement work analogously.
@@ -66,8 +66,8 @@ Another inference that can be done is about mirroring. If you could fold the tot
 * 0 mirroring -1;
 * 1 mirroring -2;
 * 2 mirroring -3, and so on, until;
-* $$ (2^{31} - 1) $$ mirroring $$ - (2^{31}) $$;
-* $$ (X - 1) $$ mirroring $$ -X $$.
+* `2^31 - 1` mirroring `-(2^31)`;
+* `X-1` mirroring `-X`.
 
 **Curiosity:** Note that the individual sum of all mirrored values is -1.
 
