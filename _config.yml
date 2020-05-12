@@ -2,7 +2,7 @@
 title: WanderCosta
 header-img: img/home-bg-bridge.jpg
 email: contact@wandercosta.com
-description: "co-founder of @wideping | software engineer at @FreeNow_DE<br><b>sharing thoughts and pieces of code</b>"
+description: "software engineer at @freenowtech<br><b>sharing thoughts and pieces of code</b>"
 baseurl: ""
 url: "http://www.wandercosta.com"
 comments: true
@@ -21,7 +21,7 @@ exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md", "
 permalink: "/:title/"
 paginate_path: "/page-:num"
 paginate: 12
-timezone: America/Sao_Paulo
+timezone: Europe/Berlin
 
 excerpt_separator: <!--more-->
 
