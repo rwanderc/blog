@@ -1,0 +1,84 @@
+baseURL = "https://wandercosta.com/"
+languageCode = "en-us"
+title = "WanderCosta"
+theme = "harbor"
+enableEmoji = true
+disqusShortname = "wandercosta"
+
+[params]
+  description = "Thoughts and pieces of code, sometimes none of them."
+  basethumb = "/img/wander-thumb.png"
+
+[params.og]
+  hometype = "website"
+  posttype = "article"
+  twittercard = "summary"
+
+[permalinks]
+  posts = "/:title/"
+
+[Author]
+  name = "Wander Costa"
+  twitter = "@rwanderc"
+
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-user fa-lg"
+  url = "/about/"
+  weight = 3
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "tags"
+  weight = 3
+
+# [[params.nav]]
+#   identifier = "categories"
+#   name = "Category"
+#   icon = "fas fa-folder-open fa-lg"
+#   url = "categories"
+#   weight = 3
+
+# [[params.nav]]
+#   identifier = "search"
+#   name = "Search"
+#   icon = "fas fa-search fa-lg"
+#   url = "search"
+#   weight = 3
+
+[[params.social]]
+  name = "feed"
+  url = "/index.xml"
+  icon = "fa fa-rss-square"
+
+[[params.social]]
+  name = "email"
+  url = "mailto:contact@wandercosta.com"
+  icon = "fas fa-envelope"
+
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/rwanderc"
+  icon = "fab fa-twitter"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/rwanderc"
+  icon = "fab fa-github"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/rwanderc/"
+  icon = "fab fa-linkedin"
+
+[params.logo]
+  url = "/img/logo-64.jpg"
+  width = 50
+  height = 50
+  alt = "Logo"
