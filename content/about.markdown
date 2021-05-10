@@ -1,11 +1,10 @@
 ---
-layout:      post
 url:         "/about/"
 title:       "about me"
 description: "The perspective of a software engineer about his development environment."
-date:        2015-12-14 13:56:00
+date:        "2015-12-14 13:56:00"
 author:      "Wander Costa"
-draft:       false
+draft:       "false"
 header_img:  "/img/post-bg-about.png"
 tags:
 - software development
