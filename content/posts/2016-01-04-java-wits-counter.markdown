@@ -1,7 +1,7 @@
 ---
 shorturl:    "http://goo.gl/D9Amn4"
 layout:      post
-url:         /java-wits-counter/"
+url:         "/java-wits-counter/"
 title:       "WitsCounter"
 subtitle:    "counting Wits parameters throughput in real time"
 description: "A Java application to count Wits parameters throughput in real time."
