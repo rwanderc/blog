@@ -3,11 +3,13 @@ languageCode = "en-us"
 title = "WanderCosta"
 theme = "harbor"
 enableEmoji = true
+googleAnalytics = "UA-70100612-2"
 disqusShortname = "wandercosta"
 
 [params]
   description = "Thoughts and pieces of code, sometimes none of them."
   basethumb = "/img/wander-thumb.png"
+  enableGoogleAnalytics = true
 
 [params.og]
   hometype = "website"
