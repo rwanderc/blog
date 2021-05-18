@@ -10,8 +10,6 @@ tags:
 - software development
 ---
 
-<img src="https://en.gravatar.com/userimage/65982695/50d3c7658867ed21b0c34750042b21b2.jpg?size=200">
-
 Hi. I'm **Wander Costa**, husband, software developer, and coffee lover.
 At present, I'm working as Engineering Manager at FREE NOW.
 
