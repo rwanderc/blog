@@ -1,17 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>environment on WanderCosta</title>
-		<link>https://wandercosta.com/tags/environment/</link>
-		<description>Recent content in environment </description>
-		<generator>Hugo -- gohugo.io</generator>
-		
-  		<language>en-us</language>
-		
-		<managingEditor>Page(/tags/environment) (Wander Costa)</managingEditor>
-    	
-  		<lastBuildDate>Mon, 14 Dec 2015 13:56:00 +0000</lastBuildDate>
-		
-		<atom:link href="/tags/environment/" rel="self" type="application/rss+xml" />
-		
-	</channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>environment on WanderCosta</title><link>https://wandercosta.com/tags/environment/</link><description>Recent content in environment</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>Page(/tags/environment) (Wander Costa)</managingEditor><lastBuildDate>Mon, 14 Dec 2015 13:56:00 +0000</lastBuildDate><atom:link href="/tags/environment/" rel="self" type="application/rss+xml"/></channel></rss>
