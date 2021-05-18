@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>testing on WanderCosta</title>
+		<link>https://wandercosta.com/tags/testing/</link>
+		<description>Recent content in testing </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/testing) (Wander Costa)</managingEditor>
+    	
+  		<lastBuildDate>Sun, 15 Sep 2019 22:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/testing/" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>

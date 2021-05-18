@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+<title>Bit Shift &amp; Bitwise</title>
+
+  <meta name="description" content="Thoughts and pieces of code, sometimes none of them." />
+  <meta property='og:url' content='https://wandercosta.com/java-bit-shift-and-bitwise-operators/'>
+  <meta property='og:type' content='article'>
+  <meta property='og:title' content='Bit Shift &amp; Bitwise | WanderCosta'>
+  <meta property='og:description' content='Using bitwise and bit shift operators in Java to execute straightforward binary calculations.'>
+  <meta property='og:image' content='https://wandercosta.com/img/wander-thumb.png'>
+  
+  <meta name='twitter:title' content='Bit Shift &amp; Bitwise | WanderCosta'/>
+  <meta name='twitter:description' content='Using bitwise and bit shift operators in Java to execute straightforward binary calculations.'/>
+  <meta name='twitter:card' content='summary'/>
+  <meta name='twitter:site' content='@rwanderc'/>
+  <meta name='twitter:creator' content='@rwanderc'/>
+
+  
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70100612-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-70100612-2');
+  </script>
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://wandercosta.com/index.xml"
+  title="WanderCosta"
+/>
+
+
+
+<link rel="stylesheet" href="https://wandercosta.com/fontawesome/css/all.min.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://wandercosta.com/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://wandercosta.com/js/main.bundle.js"></script>
+<script src="https://wandercosta.com/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.83.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://wandercosta.com/" class="nav-logo">
+        <img
+          src="https://wandercosta.com//img/logo-64.jpg"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="posts-heading">
+          
+            <h1>
+              Bit Shift &amp; Bitwise
+            </h1>
+            
+              <h2>
+                straightforward operations over binary in Java
+              </h2>
+            
+          
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+
+      
+        <img src="/img/post-bg-binary.jpg" title="" >
+        
+      
+
+      
+  <p><strong>Bit Shift</strong> and <strong>Bitwise</strong> are operators that make <strong>binary calculations</strong> perfectly straightforward.</p>
+<p>Until few months ago, I had never used bitwise operators, and my impression is that both are indeed not even known by most developers.</p>
+<p>These operators provide a great must-know solution for specific problems, like network calculations (IP &amp; netmask); privileges processing based in bit fields; communication involving checksums, parity, flow control (e.g.: serial communication); compression; encryption, etc.</p>
+<p>The performance is another important point. Instead of implementing more complex algorithms, binary processing can be done with the minimum effort, since <strong>bitwise</strong> and <strong>bit shift</strong> are primitive operations <strong>directly supported by processors</strong>.</p>
+<p>The operators are:</p>
+<ul>
+<li><code>~</code>, which performs a bitwise complement;</li>
+<li><code>&amp;</code>, which performs a bitwise AND;</li>
+<li><code>^</code>, which performs a bitwise exclusive OR;</li>
+<li><code>|</code>, which performs a bitwise inclusive OR;</li>
+<li><code>&lt;&lt;</code>, which shifts a bit pattern to the left;</li>
+<li><code>&gt;&gt;</code>, which shifts a bit pattern to the right;</li>
+<li><code>&gt;&gt;&gt;</code>, which shifts a zero into the leftmost position.</li>
+</ul>
+<h3 id="twos-complement">Two&rsquo;s Complement</h3>
+<p>To understand what are binary operations, it&rsquo;s necessary to understand how signed integer numbers are represented in binary notation. My previous post, <a href="/twos-complement">Two&rsquo;s Complement</a>, describes it.</p>
+<h3 id="-bitwise-complement"><code>~</code> Bitwise Complement</h3>
+<p>Bitwise Complement <code>~</code> is the operator to binary invert the bit pattern of a value.</p>
+<p>Let <code>A</code> be an <code>int</code> with value <code>18</code>:</p>
+<ul>
+<li><code>0000 0000 0000 0000 0000 0000 0001 0010</code> represents A, which is 18;</li>
+<li><code>1111 1111 1111 1111 1111 1111 1110 1101</code> represents ~A, which is -19 in <a href="/twos-complement">Two&rsquo;s Complement</a>.</li>
+</ul>
+<p>All bits were inverted, thus turning <code>0</code> to <code>1</code> and <code>1</code> to <code>0</code>. Because of the <a href="/twos-complement">Two&rsquo;s Complement</a> architecture, every <code>~X</code> will be <code>-X-1</code>.</p>
+<h3 id="-bitwise-and"><code>&amp;</code> Bitwise AND</h3>
+<p>Bitwise AND <code>&amp;</code> is the operator to execute binary conjunction.</p>
+<p>Let <code>A</code> be a <code>short</code> with value <code>18</code>, and <code>B</code> be a <code>short</code> with value <code>4216</code>;</p>
+<ul>
+<li><code>0000 0000 0001 0010</code> represents A, which is 18;</li>
+<li><code>0001 0000 0111 1000</code> represents B, which is 4216;</li>
+<li><code>0000 0000 0001 0000</code> represents A &amp; B, which is 16.</li>
+</ul>
+<p>Binary conjunction turns two <code>1</code> into <code>1</code>, and anything else into <code>0</code>. In the above example, the only coincident bit in <code>A</code> and <code>B</code> was the 5th bit (from right to left), what makes the result value be <code>16</code>.</p>
+<h3 id="-bitwise-exclusive-or"><code>^</code> Bitwise Exclusive OR</h3>
+<p>Bitwise Exclusive OR <code>^</code> is the operator to execute binary exclusive disjunctions, also known as <strong>XOR</strong>.</p>
+<p>Using the same previous example, let <code>A</code> be a <code>short</code> with value <code>18</code>, and <code>B</code> be a <code>short</code> with value <code>4216</code>;</p>
+<ul>
+<li><code>0000 0000 0001 0010</code> represents A, which is 18;</li>
+<li><code>0001 0000 0111 1000</code> represents B, which is 4216;</li>
+<li><code>0001 0000 0110 1010</code> represents A ^ B, which is 4202.</li>
+</ul>
+<p>Binary exclusive disjunction turns one, and only one, <code>1</code> into <code>1</code>, and anything else into <code>0</code>. In the above example, the result value was 4202.</p>
+<h3 id="-bitwise-inclusive-or"><code>|</code> Bitwise Inclusive OR</h3>
+<p>Bitwise Inclusive OR <code>|</code> is the operator to execute binary inclusive disjunctions, also known as simply <strong>OR</strong>.</p>
+<p>Using the same previous example, let <code>A</code> be a <code>short</code> with value <code>18</code>, and <code>B</code> be a <code>short</code> with value <code>4216</code>;</p>
+<ul>
+<li><code>0000 0000 0001 0010</code> represents A, which is 18;</li>
+<li><code>0001 0000 0111 1000</code> represents B, which is 4216;</li>
+<li><code>0001 0000 0111 1010</code> represents A ^ B, which is 4218.</li>
+</ul>
+<p>Binary inclusive disjunction turns two <code>0</code> into <code>0</code> and anything else into <code>1</code>. In the above example, the result value was 4218.</p>
+<h3 id="-signed-left-shift"><code>&lt;&lt;</code> Signed Left Shift</h3>
+<p>Signed Left Shift <code>&lt;&lt;</code> is the operator to shift bits to the left.</p>
+<p>Let <code>A</code> be a <code>short</code> with value <code>25</code>.</p>
+<ul>
+<li><code>0000 0000 0001 1001</code> represents A, which is 25;</li>
+<li><code>0000 0000 0110 0100</code> represents A &laquo; 2, which is 100.</li>
+</ul>
+<p>The operation above shifted 2 positions to the left, making the result value be 100.</p>
+<p>It&rsquo;s important to understand what happens the in most significant bit, and to understand it, let&rsquo;s take another example.</p>
+<p>Let <code>B</code> be a <code>short</code> with value <code>8192</code>.</p>
+<ul>
+<li><code>0010 0000 0000 0000</code> represents B, which is 8192;</li>
+<li><code>0100 0000 0000 0000</code> represents B &laquo; 1, which is 16384;</li>
+<li><code>1000 0000 0000 0000</code> represents B &laquo; 2, which is -32768 in <a href="/twos-complement">Two&rsquo;s Complement</a>.</li>
+<li><code>0000 0000 0000 0000</code> represents B &laquo; 3, which is 0.</li>
+</ul>
+<p>That is, simple shifts. No special behavior happens during shift to the left.</p>
+<h3 id="-signed-right-shift"><code>&gt;&gt;</code> Signed Right Shift</h3>
+<p>Signed Right Shift <code>&gt;&gt;</code> is the operator to shift bits to the right, keeping the signal.</p>
+<p>Let <code>A</code> be a <code>short</code> with value <code>25</code>.</p>
+<ul>
+<li><code>0000 0000 0001 1001</code> represents A, which is 25;</li>
+<li><code>0000 0000 0000 0110</code> represents A &raquo; 2, which is 12.</li>
+</ul>
+<p>The operation above shifted the bits 2 positions to the right, making the result value be 12.</p>
+<p>To figure out what happens in the most significant bit, let&rsquo;s also take other examples.</p>
+<p>Let <code>B</code> be a <code>short</code> with value <code>16384</code>.</p>
+<ul>
+<li><code>0100 0000 0000 0000</code> represents B, which is 16384;</li>
+<li><code>0010 0000 0000 0000</code> represents B &raquo; 1, which is 8192.</li>
+</ul>
+<p>Let <code>C</code> be a <code>short</code> with value <code>-32768</code>.</p>
+<ul>
+<li><code>1000 0000 0000 0000</code> represents C, which is -32768;</li>
+<li><code>1100 0000 0000 0000</code> represents B &raquo; 1, which is -16384;</li>
+<li><code>1110 0000 0000 0000</code> represents B &raquo; 1, which is -8192;</li>
+</ul>
+<p>Thus, we conclude that Signed Right Shift keeps the signal. In other words, it shifts a bit at the leftmost position with the same value as the signal.</p>
+<h3 id="-unsigned-right-shift"><code>&gt;&gt;&gt;</code> Unsigned Right Shift</h3>
+<p>Unsigned Right Shift <code>&gt;&gt;&gt;</code> is the operator to shift bits to the right, not considering the signal.</p>
+<p>The behavior is the same as the Signed Right Shift, with only an exception: the bit added to the left is ALWAYS zero. Let&rsquo;s take the last example of Signed Right Shift:</p>
+<p>Let <code>C</code> be a <code>short</code> with value <code>-32768</code>.</p>
+<ul>
+<li><code>1000 0000 0000 0000</code> represents C, which is -32768;</li>
+<li><code>0100 0000 0000 0000</code> represents B &raquo; 1, which is 16384;</li>
+<li><code>0010 0000 0000 0000</code> represents B &raquo; 1, which is 8192;</li>
+</ul>
+<p>It results in always producing a positive value, which is the square root of the absolute value of C.</p>
+<h3 id="shift-peculiarities">Shift Peculiarities</h3>
+<p>Shifts in binary representations are shortcuts to calculate powers of 2 and square roots, ONLY IF it does not modify the most significant bit.</p>
+<p>When shifting A to the left in one position, if the most significant bit is not modified, the result will be <code>A^2</code>. When shifting A to the right in one position, if the most significant bit is not modified, the result will be <code>sqrt(A)</code>.</p>
+
+
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+            <a
+              href="https://wandercosta.com/tags/java/"
+              >java</a
+            >&nbsp;
+          
+            <a
+              href="https://wandercosta.com/tags/basics/"
+              >basics</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+        (function() {
+            
+            
+            if (window.location.hostname == "localhost") return;
+
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            var disqus_shortname = 'wandercosta';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >comments powered by <span class="logo-disqus">Disqus</span></a
+  >
+
+
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="/index.xml" name="feed">
+        <em class="fa fa-rss-square"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="mailto:contact@wandercosta.com" name="email">
+        <em class="fas fa-envelope"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="https://twitter.com/rwanderc" name="twitter">
+        <em class="fab fa-twitter"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="https://github.com/rwanderc" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="https://www.linkedin.com/in/rwanderc/" name="linkedin">
+        <em class="fab fa-linkedin"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://wandercosta.com/about">Wander Costa</a>
+      &nbsp;&copy;
+      2019
+      
+        &nbsp;/&nbsp;
+        <a href="https://wandercosta.com/">WanderCosta</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

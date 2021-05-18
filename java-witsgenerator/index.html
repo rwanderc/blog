@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+<title>WitsGenerator</title>
+
+  <meta name="description" content="Thoughts and pieces of code, sometimes none of them." />
+  <meta property='og:url' content='https://wandercosta.com/java-witsgenerator/'>
+  <meta property='og:type' content='article'>
+  <meta property='og:title' content='WitsGenerator | WanderCosta'>
+  <meta property='og:description' content='A Java command-line application to generate random Wits data.'>
+  <meta property='og:image' content='https://wandercosta.com/img/wander-thumb.png'>
+  
+  <meta name='twitter:title' content='WitsGenerator | WanderCosta'/>
+  <meta name='twitter:description' content='A Java command-line application to generate random Wits data.'/>
+  <meta name='twitter:card' content='summary'/>
+  <meta name='twitter:site' content='@rwanderc'/>
+  <meta name='twitter:creator' content='@rwanderc'/>
+
+  
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70100612-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-70100612-2');
+  </script>
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://wandercosta.com/index.xml"
+  title="WanderCosta"
+/>
+
+
+
+<link rel="stylesheet" href="https://wandercosta.com/fontawesome/css/all.min.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://wandercosta.com/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://wandercosta.com/js/main.bundle.js"></script>
+<script src="https://wandercosta.com/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.83.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+      <a href="https://wandercosta.com/" class="nav-logo">
+        <img
+          src="https://wandercosta.com//img/logo-64.jpg"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+      </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/tags" id="Tags"
+              ><em class="fas fa-tag fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="posts-heading">
+          
+            <h1>
+              WitsGenerator
+            </h1>
+            
+              <h2>
+                an application to generate random Wits data
+              </h2>
+            
+          
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+
+      
+        <img src="/img/post-bg-rig.jpg" title="" >
+        
+      
+
+      
+  <p>Carrying on in the context of Oil &amp; Gas, in this post I will share a very simple Java application to stream random Wits data, provided through a TCP Socket Server to a single client. If you are new to Wits protocol, please visit my previous post, <a href="/wits-simplified/">Wits Simplified</a>.</p>
+<p>For this project, I&rsquo;m using:</p>
+<ul>
+<li>Java JDK 8u73;</li>
+<li>Maven 3.3.9.</li>
+</ul>
+<p>There are also other libraries being used (JUnit, Mockito, JaCoCo, etc), however, Maven will automatically download them.</p>
+<p>This <a href="https://github.com/rwanderc/wits-generator">code</a> is also available on my <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="https://github.com/rwanderc">GitHub</a> page. Feel free to comment if you have any doubt or suggestion. 😄</p>
+<h3 id="licensing">Licensing</h3>
+<p>This software is licensed under the MIT license, which basically means that you can use it for any purpose <em><strong>without any warranty</strong></em>. ⚠️</p>
+<h1 id="architecture">Architecture</h1>
+<p>This application creates a thread to provide a TCP server, generates Wits data and publishes the generated data into the socket of the connected client. Its design is quite simple, and the overall responsibility and behavior of the classes are as described below:</p>
+<ul>
+<li><strong>WitsServer.java</strong>: orchestrates the start/stop of the resources and is responsible for writing the data into the socket;</li>
+<li><strong>TcpServer.java</strong>: is started as other thread, to provide socket connection for the client to connect to;</li>
+<li><strong>WitsGenerator.java</strong>: generates Wits blocks of data, by assembling Wits lines;</li>
+<li><strong>WitsLineGenerator.java</strong>: generates each Wits line of data.</li>
+</ul>
+<p>The class <strong>WitsServer.java</strong> depends on the other classes, <strong>TcpServer.java</strong>, <strong>WitsGenerator.java</strong> and <strong>WitsLineGenerator.java</strong> (transitively), respecting all the different responsibilities of these classes.</p>
+<p>The class <strong>Main.java</strong> is only used to interface the user&rsquo;s call and the application itself, thus it will not be covered in this document. However, it&rsquo;s interesting to look into the class to better understand how the command-line is being interpreted and instantiating the main classes.</p>
+<h1 id="compilation">Compilation</h1>
+<p>There are no runtime dependencies of the application. However, some plugins and test libraries are being used to produce coverage reports as well as to make sure the expected behaviors are produced from the classes. Thus Maven will be responsible for downloading them.</p>
+<p>To compile the project, run <code>mvn clean install</code>. After executing, it will result in a tinny JAR file under the <code>./target</code> folder, which is the compiled application.</p>
+<h1 id="execution">Execution</h1>
+<p>The compiled application can be easily executed from the command-line, as the following help describes:
+{% highlight text %}
+Usage: java -jar wits-generator-1.1.jar [port] [frequency] [records] [items]
+Creates a socket server and transmits random Wits data from time
+to time. Only allows ONE single client connected.</p>
+<p>Mandatory arguments
+port		The port to run the socket Server
+frequency	The frequency, in seconds, of the data generation
+records	The number of records to be transmitted
+items		The number of items to be transmitted in each record
+{% endhighlight %}</p>
+<p>When executed, it will start listening for the client at the port <code>port</code> and produce <code>records x items</code> lines of data in each <code>frequency</code> milliseconds.</p>
+<p>All the configuration parameters may be changed in the command-line call, making it really adaptable to provide as many items and records as necessary in the wanted frequency. Make sure to provide reasonable input parameters, so the client can consume the data in less time than the frequency it&rsquo;s created.</p>
+<p>It means that, if you want to consume the generated data from a slow or unstable TCP connection (e.g. through a low bandwidth Internet connection, a VPN connection, or an old 10Mbps Ethernet network adapter), you must adapt the frequency and the amount of data being produced to meet your connection limitations. As Wits runs as plain text over a socket connection and <em>does not provide historical replay</em> by default, the TCP protocol may spend some effort trying to resend lost packages. That way, publishing too much data may cause the client not to be able to retrieve it all.</p>
+<h1 id="code">Code</h1>
+<p>I&rsquo;m not attaching here the Main.class. If necessary, visit my <!-- raw HTML omitted --><!-- raw HTML omitted --> <a href="https://github.com/rwanderc">GitHub</a> page.</p>
+<h4 id="witsserverjava">WitsServer.java</h4>
+<script type="application/javascript" src="https://gist.github.com/rwanderc/375a333b53e5201f879af7a8f69a47f3.js"></script>
+
+<h4 id="tcpserverjava">TcpServer.java</h4>
+<script type="application/javascript" src="https://gist.github.com/rwanderc/24309ba01c8292f39ce4100bd7fddc3d.js"></script>
+
+<h4 id="witsgeneratorjava">WitsGenerator.java</h4>
+<script type="application/javascript" src="https://gist.github.com/rwanderc/c2a67e2c1c326f659c2c8bacc6c32b96.js"></script>
+
+<h4 id="witslinegeneratorjava">WitsLineGenerator.java</h4>
+<script type="application/javascript" src="https://gist.github.com/rwanderc/bbaa7811ae1071b75cf21b6ccee5917c.js"></script>
+
+
+
+      
+        <div class="blog-tags">
+          Tags:
+          
+            <a
+              href="https://wandercosta.com/tags/java/"
+              >java</a
+            >&nbsp;
+          
+            <a
+              href="https://wandercosta.com/tags/og/"
+              >O&amp;G</a
+            >&nbsp;
+          
+        </div>
+      
+    </article>
+    
+    
+      
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+        (function() {
+            
+            
+            if (window.location.hostname == "localhost") return;
+
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            var disqus_shortname = 'wandercosta';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+  <a href="https://disqus.com/" class="dsq-brlink"
+    >comments powered by <span class="logo-disqus">Disqus</span></a
+  >
+
+
+    
+  </div>
+
+    <footer>
+  
+
+<div class="social-icons">
+  
+    
+    
+      
+      <a href="/index.xml" name="feed">
+        <em class="fa fa-rss-square"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="mailto:contact@wandercosta.com" name="email">
+        <em class="fas fa-envelope"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="https://twitter.com/rwanderc" name="twitter">
+        <em class="fab fa-twitter"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="https://github.com/rwanderc" name="github">
+        <em class="fab fa-github"></em>
+      </a>
+    
+       &nbsp;&ndash;&nbsp;
+      <a href="https://www.linkedin.com/in/rwanderc/" name="linkedin">
+        <em class="fab fa-linkedin"></em>
+      </a>
+    
+  
+
+  
+</div>
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://wandercosta.com/about">Wander Costa</a>
+      &nbsp;&copy;
+      2019
+      
+        &nbsp;/&nbsp;
+        <a href="https://wandercosta.com/">WanderCosta</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+
+    <p class="credits theme-by">
+      Powered By <a href="https://gohugo.io">Hugo</a>&nbsp;
+      Theme
+      <a href="https://github.com/matsuyoshi30/harbor">Harbor</a>
+    </p>
+  </div>
+</footer>
+
+  </body>
+</html>

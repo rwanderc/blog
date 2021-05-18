@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>spring boot on WanderCosta</title>
+		<link>https://wandercosta.com/tags/spring-boot/</link>
+		<description>Recent content in spring boot </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/spring-boot) (Wander Costa)</managingEditor>
+    	
+  		<lastBuildDate>Sat, 21 Sep 2019 20:18:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/spring-boot/" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>

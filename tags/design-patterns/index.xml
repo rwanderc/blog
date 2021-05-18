@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>design patterns on WanderCosta</title>
+		<link>https://wandercosta.com/tags/design-patterns/</link>
+		<description>Recent content in design patterns </description>
+		<generator>Hugo -- gohugo.io</generator>
+		
+  		<language>en-us</language>
+		
+		<managingEditor>Page(/tags/design-patterns) (Wander Costa)</managingEditor>
+    	
+  		<lastBuildDate>Sat, 21 Sep 2019 09:20:00 +0000</lastBuildDate>
+		
+		<atom:link href="/tags/design-patterns/" rel="self" type="application/rss+xml" />
+		
+	</channel>
+</rss>
