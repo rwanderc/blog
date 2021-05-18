@@ -24,7 +24,7 @@ disqusShortname = "wandercosta"
   twitter = "@rwanderc"
 
 [outputs]
-  section = ["JSON", "HTML"]
+  section = ["HTML"]
 
 [[params.nav]]
   identifier = "about"
