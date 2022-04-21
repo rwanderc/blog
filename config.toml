@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "WanderCosta"
 theme = "harbor"
 enableEmoji = true
-googleAnalytics = "UA-70100612-2"
+googleAnalytics = "G-00ERBL6RH1"
 disqusShortname = "wandercosta"
 
 [params]
