@@ -102,9 +102,8 @@ EXCEL GRAPH
 ## Identifying spikes
 
 To identify spikes, we will compare the acceleration with a subset of other accelerations previously collected and
-calculate if the new collected acceleration respects a certain threshold.
-
-The Standard Deviation expresses the level of dispersion in a set of points. It indicates how uniform a set of data is.
+calculate if the new collected acceleration respects a certain threshold. The **Standard Deviation** expresses the level
+of dispersion in a set of points and is a good starting point to base the threshold upon.
 
 # Spike simulator
 
