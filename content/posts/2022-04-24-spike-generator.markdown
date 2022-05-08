@@ -53,16 +53,50 @@ COLOCAR OUTRA IMAGEM EXEMPLIFICANDO MELHOR!
 
 Detecting spikes or valleys in discrete series of data is a matter of identifying the discontinuity of the curve. But if
 it's a discrete series of data, there is no concept of continuity or discontinuity. Then we need to understand a couple
-of ideas and work on their applications for discrete series.
+of ideas and work on their analog applications for discrete series.
 
-The speed of a curve is the same as the angle of the curve in a specific point. Therefore, in discrete series, the speed
-is the quotient of the deltas: `dY / dX` = `y1-y0 / x1-x0`.
+### Speed
 
-For a series of data points (x, y) `[1,1], [2,2], [3,10]`, the angle between 1st and 2nd points
-equals `1` (`dY/dX = (2-1)/(2-1)`), while the angle between 2nd and 3rd points equals `8` (`dY/dX = (10-2)/(3-2)`).
-However, for the series of data points (x, y) `[1,1], [2,2], [3,3]`, both angles between 1st and 2nd, and between 2nd
-and 3rd equal `1` (`dY/dX = (2-1)/(2-1)` and `dY/dX = (3-2)/(3-2)` respectively). The differences between these 2 series
-of data points is that the first one tends to accelerate while the second keeps a constant speed of growth.
+The speed of a curve is given by its first derivative, and can ultimately be used to calculate the angle of the curve in
+a specific point. In the parabola below, described by the expression `f(x) = x^2`, its first derivative is expressed
+by `f'(x) = 2x`. And from that, it's possible to calculate the exact angle of the curve in any point by the
+expression `g(x) = atan(f'(x))`, in radians, or `h(x) = atan(f'(x)) * 180/π`, in degrees.
+
+![](/img/spikes-xx-2x-angle.png)
+
+It's interesting to observe the relation between the `f(x)` and `h(x)`: when `x` tends to `-∞`, `h(x)` tends to `-90`;
+and when `x` tends to `+∞`, `h(x)` tends to `90`, however, it never touches `-90` or `90`. And it's intuitive to read
+this from `f(x)`, since having either `-90` or `90` would mean `f(x)` would have multiple values for the same `x`, which
+is impossible.
+
+It's important to understand the relation of the first derivative and the angle and the curve, but for this work, we
+won't need to calculate angles in radians or degrees. Therefore, we can focus on the derivatives only.
+
+### Acceleration
+
+The acceleration of a curve is an extension of the concept of the speed, and is given by the second derivative.
+Therefore, for the function `f(x) = x^2`, the first derivative is given by the expression `f'(x) = 2x` while the second
+derivative is given by the expression `f''(x) = 2`, which is a constant. In other words, `f(x)` has constant
+acceleration.
+
+![](/img/spikes-xx-2x-2.png)
+
+An important aspects of the acceleration that will be useful when writing the algorithm is that the acceleration is
+positive, which means that the curvature points upwards. If `f(x) = -x^2`, it's acceleration would be given
+by `f''(x) = -2` instead, and its curvature would point downward.
+
+![](/img/spikes-xx-2x-2-negative.png)
+
+### Speed and Acceleration in discrete series
+
+In discrete series of data, the same speed can be calculated by the quotient of the differences of 2 points `(x0, y0)`
+and `(x1, y1)`: `dY / dX = (y1 - y0) / (x1 - x0)`.
+
+For a series of data points (x, y) `[1,1], [2,2], [3,10]`, the speed between 1st and 2nd points equals
+`1` (`dY/dX = (2-1)/(2-1)`), while the speed between 2nd and 3rd points equals `8` (`dY/dX = (10-2)/(3-2)`). However,
+for the series of data points (x, y) `[1,1], [2,2], [3,3]`, both speeds between 1st and 2nd, and between 2nd and 3rd
+equal `1` (`dY/dX = (2-1)/(2-1)` and `dY/dX = (3-2)/(3-2)` respectively). The differences between these 2 series of data
+points is that the first one tends to accelerate while the second keeps a constant speed of growth.
 
 EXCEL GRAPH
 
