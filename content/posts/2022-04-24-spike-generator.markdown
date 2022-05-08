@@ -49,11 +49,11 @@ errors in the reading of the pulses and are usually manually identified and remo
 
 COLOCAR OUTRA IMAGEM EXEMPLIFICANDO MELHOR!
 
-# The solution
+# Mathematical background
 
-Detecting spikes or valleys in discrete series of data is a matter of identifying the discontinuity of the curve. But if
-it's a discrete series of data, there is no concept of continuity or discontinuity. Then we need to understand a couple
-of ideas and work on their analog applications for discrete series.
+Detecting spikes or valleys in discrete series of data is a matter of identifying the discontinuity of the curve,
+associated with some other indications. But if it's a discrete series of data, there is no concept of continuity or
+discontinuity. Then we need to understand a couple of ideas and work on their analog applications for discrete series.
 
 ### Speed
 
@@ -64,13 +64,16 @@ expression `g(x) = atan(f'(x))`, in radians, or `h(x) = atan(f'(x)) * 180/π`, i
 
 ![](/img/spikes-xx-2x-angle.png)
 
-It's interesting to observe the relation between the `f(x)` and `h(x)`: when `x` tends to `-∞`, `h(x)` tends to `-90`;
-and when `x` tends to `+∞`, `h(x)` tends to `90`, however, it never touches `-90` or `90`. And it's intuitive to read
-this from `f(x)`, since having either `-90` or `90` would mean `f(x)` would have multiple values for the same `x`, which
-is impossible.
+Looking to the graph of `f(x)`, it's easy to find out where the curve changed its direction. And this is also reflected
+in the graph for `f'(x)`, since the speed was `0`, coming from negative to positive.
 
-It's important to understand the relation of the first derivative and the angle and the curve, but for this work, we
-won't need to calculate angles in radians or degrees. Therefore, we can focus on the derivatives only.
+And it's also interesting to observe the relation between the `f(x)` and `h(x)`: when `x` tends to `-∞`, `h(x)` tends
+to `-90`; and when `x` tends to `+∞`, `h(x)` tends to `90`, however, it never touches `-90` or `90`. And it's intuitive
+to read this from `f(x)`, since having either `-90` or `90` would mean `f(x)` would have multiple values for the
+same `x`, which is impossible.
+
+For this work, it's important to understand the relation of the first derivative and the angle and the curve, but for
+this work, we won't need to calculate angles in radians or degrees. Therefore, we can focus on the derivatives only.
 
 ### Acceleration
 
@@ -87,64 +90,73 @@ by `f''(x) = -2` instead, and its curvature would point downward.
 
 ![](/img/spikes-xx-2x-2-negative.png)
 
-### Speed and Acceleration in discrete series
+For both examples above, however, the acceleration was constant. Let's analyse another function, where we have a
+different behaviour: `f(x) = x^3 - 15x`, `f'(x) = 3x^2 - 15` and `f''(x) = 6x`. From the graphs, it's easy to spot the 2
+moments where the curve changes the direction, i.e. the speed reached `f'(x) = 0`: `x = sqrt(5)` and `x = -sqrt(5)`.
 
-In discrete series of data, the same speed can be calculated by the quotient of the differences of 2 points `(x0, y0)`
-and `(x1, y1)`: `dY / dX = (y1 - y0) / (x1 - x0)`.
+![](/img/spikes-xxx-3x2-6x.png)
 
-For a series of data points (x, y) `[1,1], [2,2], [3,10]`, the speed between 1st and 2nd points equals
-`1` (`dY/dX = (2-1)/(2-1)`), while the speed between 2nd and 3rd points equals `8` (`dY/dX = (10-2)/(3-2)`). However,
-for the series of data points (x, y) `[1,1], [2,2], [3,3]`, both speeds between 1st and 2nd, and between 2nd and 3rd
-equal `1` (`dY/dX = (2-1)/(2-1)` and `dY/dX = (3-2)/(3-2)` respectively). The differences between these 2 series of data
-points is that the first one tends to accelerate while the second keeps a constant speed of growth.
-
-EXCEL GRAPH
-
-In other terms, the speed of a curve is how fast `y = f(x)` varies, that is `y' = f'(x)`. Considering the two data
-series above:
-
-- (x, y) `[1,1], [2,2], [3,10]` would generate the speed series (x, y') `[1,1], [2,8]`
-- (x, y) `[1,1], [2,2], [3,3]` would generate the speed series (x, y') `[1,1], [2,1]`
-
-And the acceleration of a curve is an extension of this concept. In other words, it's how fast the speed (not the `y`)
-increases or decreases. That is `y'' = f''(x)`. Considering the two data series above:
-
-- (x, y) `[1,1], [2,2], [3,10]` would generate the acceleration point (x, y'') `[1,7]`
-- (x, y) `[1,1], [2,2], [3,3]` would generate the acceleration point (x, y'') `[1,0]`
-
-That's exactly the concept of first and second derivatives of a curve (speed and acceleration) but applied to discrete
-series of data. And that's the base of the algorithm.
-
-### Acceleration
-
-The acceleration of a curve is relevant because it's more sensitive to the variations of the tendency of the curve than
-the speed itself, and because it's also an indication of the direction of the curve.
+The graph of the acceleration `f''(x)` does not provide information about the change of the direction. However, it
+provides different and important insight: the indication of the change of the curvature of the parabola. Looking at the
+graph from `f''(x)`, it's easy to find where `f(x)` stopped behaving as a parabola pointing downward and started
+behaving as a parabola pointing upward, since the acceleration reached `0`, coming from negative to positive.
 
 > The graph of a function with a positive second derivative is upwardly concave, while the graph of a function with a
 > negative second derivative curves in the opposite way.
 
 https://en.wikipedia.org/wiki/Second_derivative
 
-The series of data points (x,y) `[1,1], [2,3], [3,5], [4,6], [5,6.5]` would result in all positive speeds, but some
-negative acceleration points: (x,y') `[1,2], [2,2], [3,1], [4,0.5]` and (x,y'') `[1,0], [2,-1], [3,-0.5]`. It means that
-the curve is changing the direction. However, the speed doesn't provide such information until `y` starts to the
-decrease.
+The understanding of these insights is relevant for the understanding of the algorithm:
 
-EXCEL GRAPH
+- when the curve changes its direction
+- when the curve changes its curvatureThe acceleration of a curve is relevant because it's more sensitive to the
+  variations of the tendency of the curve than the speed itself, and because it's also an indication of the direction of
+  the curve.
 
-### Identifying spikes
+### Speed and Acceleration in discrete series
 
-To identify spikes, we will compare the acceleration with a subset of other accelerations previously collected and
-calculate if the new collected acceleration respects a certain threshold. The **Standard Deviation** expresses the level
-of dispersion in a set of points and is a good starting point to base the threshold upon.
+Discrete series of data are by nature not continuous. Therefore instead of calculating the tangent in a specific point,
+the straight line between two points is used. Speed and acceleration have their analog meanings for discrete series
+considering this logic.
+
+![](/img/spikes-xx-discrete.png)
+
+![](/img/spikes-xxx-discrete.png)
+
+The speed of discrete series of data can be calculated as the angle between two points, i.e. the quotient of the
+differences between `(x0, y0)` and `(x1, y1)`: `dY/dX = (y1-y0)/(x1-x0)`.
+
+For a series of data points `S1(x,y) = {[1,1], [2,2], [3,3]}`, the speed between 1st and 2nd points, and between 2nd and
+3rd points equals `1` (`dY/dX = (2-1)/(2-1)` and `dY/dX = (3-2)/(3-2)`), while the speed between 2nd and 3rd points
+equals `8` (`dY/dX = (10-2)/(3-2)`). However, for the series of data points `S2(x,y) = {[1,1], [2,2], [3,10]}`, the
+speed between 1st and 2nd points is `1` (`dY/dX = (2-1)/2-1)`) while between 2nd and 3rd is `8` (`dY/dX = (10-2)/(3-2)`)
+. Then the series of speeds are respectively `S1'(x,y) = {[1,1], [2,1]}` and `S2'(x,y) = {[1,1], [2,8]}`
+
+![](/img/spikes-discrete-examples.png)
+
+Like the 2nd derivative, the acceleration of the discrete series can be calculated as an extension of the speed, i.e.
+the quotient of the differences between two speeds `(x'0, y'0)` and `(x'1, y'1)`: `d'Y/dX = (y'1-y'0)/(x'1-x'0)`.
+Therefore, given the previous data sets, `S1''(x,y) = {[1,0]}` and `S2''(x,y) = {[1, 7]}`. That is, the acceleration of
+S1 is `0` while the acceleration of S2 is `7` for the sets specified.
+
+# Identifying Spikes
+
+When identifying spikes or valleys in data sets, it's important to keep the focus on the acceleration of the data set.
+And the reason for this is that the acceleration will easily show the changes in the tendency of the graph, which is
+actually what it's intended to be identified.
+
+However, how much acceleration change is potentially a spike or valley?
+
+we will compare the acceleration with a subset of other accelerations previously collected and calculate if the new
+collected acceleration respects a certain threshold. The **Standard Deviation** expresses the level of dispersion in a
+set of points and is a good starting point to base the threshold upon.
 
 # Spike simulator
 
 # Contributions
 
-Did you find any wrong information? Please help fix it. I'm not an expert on the Oil & Gas industry neither a
-mathematician. Therefore, the terms and descriptions might not be very accurate and I'd be happy to receive reviews and
-contribution to this article. Please comment below.
+Did you find any wrong information? Please help me fix it commenting below. I'd be happy to receive reviews and
+contribution to this article.
 
 [neuroscience]: https://www.frontiersin.org/articles/10.3389/fninf.2015.00028/full
 
