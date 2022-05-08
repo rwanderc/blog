@@ -142,16 +142,16 @@ S1 is `0` while the acceleration of S2 is `7` for the sets specified.
 # Identifying Spikes
 
 When identifying spikes or valleys in data sets, it's important to keep the focus on the acceleration of the data set.
-And the reason for this is that the acceleration will easily show the changes in the tendency of the graph, which is
-actually what it's intended to be identified.
+And the reason for this is that the acceleration will easily show the changes in the tendency of the data set.
 
-However, how much acceleration change is potentially a spike or valley?
+However, how much acceleration change is considered a potential spike or valley spot?
 
-we will compare the acceleration with a subset of other accelerations previously collected and calculate if the new
-collected acceleration respects a certain threshold. The **Standard Deviation** expresses the level of dispersion in a
-set of points and is a good starting point to base the threshold upon.
+The answer depends on the actual behaviour and tendency of dispersion of the data set. Therefore, it's important monitor
+the **Standard Deviation** of the acceleration to define what's acceptable and what's not.
 
 # Spike simulator
+
+![](/img/spikes-simulator-sampling.png)
 
 # Contributions
 
