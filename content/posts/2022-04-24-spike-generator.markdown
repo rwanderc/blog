@@ -35,8 +35,8 @@ Among many details of this operation, there is also a special mud prepared by ch
 drilling column, from rig until the bit, in order to control pressure and lift sediments up to the rig while the bit is
 cutting them. In operations with MWD (measurement while drilling) tools, therefore with the need for real-time
 monitoring of the geological responses downhole, near the bit, the communication with these tools is done without wires.
-The communication is based on [telemetry][telemetry] using the mud as transport layer. The MWD tools transmit
-information by pumping the mud downhole in a frequency that the computers at the rig can decode and convert into data.
+It's actually based on [telemetry][telemetry] using the mud as transport layer. The MWD tools transmit information by
+pumping the mud downhole in a frequency that the computers at the rig can read, decode and convert into data.
 
 If you want to know more about the Well Drilling and Well Construction Process, there are some
 good [videos in Youtube][wellconstructionvideo] explaining with many more details.
@@ -82,7 +82,7 @@ increases or decreases. That is `y'' = f''(x)`. Considering the two data series 
 That's exactly the concept of first and second derivatives of a curve (speed and acceleration) but applied to discrete
 series of data. And that's the base of the algorithm.
 
-## Acceleration
+### Acceleration
 
 The acceleration of a curve is relevant because it's more sensitive to the variations of the tendency of the curve than
 the speed itself, and because it's also an indication of the direction of the curve.
@@ -99,7 +99,7 @@ decrease.
 
 EXCEL GRAPH
 
-## Identifying spikes
+### Identifying spikes
 
 To identify spikes, we will compare the acceleration with a subset of other accelerations previously collected and
 calculate if the new collected acceleration respects a certain threshold. The **Standard Deviation** expresses the level
@@ -107,15 +107,11 @@ of dispersion in a set of points and is a good starting point to base the thresh
 
 # Spike simulator
 
-asd
+# Contributions
 
----
-
-# Contribution
-
-Did you find any wrong information? Please me fix it. I'm not an expert on the Oil & Gas industry neither a
+Did you find any wrong information? Please help fix it. I'm not an expert on the Oil & Gas industry neither a
 mathematician. Therefore, the terms and descriptions might not be very accurate and I'd be happy to receive reviews and
-contribution to this article.
+contribution to this article. Please comment below.
 
 [neuroscience]: https://www.frontiersin.org/articles/10.3389/fninf.2015.00028/full
 
