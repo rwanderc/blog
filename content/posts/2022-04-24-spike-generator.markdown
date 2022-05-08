@@ -52,9 +52,8 @@ COLOCAR OUTRA IMAGEM EXEMPLIFICANDO MELHOR!
 # The solution
 
 Detecting spikes or valleys in discrete series of data is a matter of identifying the discontinuity of the curve. But if
-it's a discrete series of data, there is no concept of continuity or discontinuity.
-
-Let's understand a couple of ideas and work on analogies.
+it's a discrete series of data, there is no concept of continuity or discontinuity. Then we need to understand a couple
+of ideas and work on their applications for discrete series.
 
 The speed of a curve is the same as the angle of the curve in a specific point. Therefore, in discrete series, the speed
 is the quotient of the deltas: `dY / dX` = `y1-y0 / x1-x0`.
