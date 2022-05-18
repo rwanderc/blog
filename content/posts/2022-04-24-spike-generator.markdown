@@ -15,9 +15,15 @@ tags:
 
 If you are a "show me code" dude, jump directly to the [repository][repository].
 
-In 2014, I drafted an algorithm to detect spikes in real-time data streams, but never really wrote it down. At that
-moment, I was trying to find out a solution to a problem related to the Oil & Gas industry, but eventually I found out
-it to be an [interesting problem also in neuroscience][neuroscience].
+The year of 2014 was an interesting one to me. I joined a company and worked in a project for a couple of months in
+Kuala Lumpur, Malaysia. It was again in the same industry I already worked for years already, but with a different set
+of experiences. I remembered I wanted to put some thoughts into a problem I faced years back and happened to face again
+there, in Malaysia: **detection of spikes in real time data streams**. Then I drafted an algorithm to detect those
+spikes, but never really wrote it down, until this post.
+
+At that moment, I was trying to find out a solution to a problem in the Oil & Gas industry, but eventually I found out
+it to be an [interesting problem also in neuroscience][neuroscience] as well. In this post, I cover the original
+problem, but given the same aspects, the solution can be replicated to other scenarios.
 
 # The Oil & Gas telemetry problem
 
@@ -42,8 +48,8 @@ If you want to know more about the Well Drilling and Well Construction Process, 
 good [videos in Youtube][wellconstructionvideo] explaining with many more details.
 
 But where do the spikes appear? In these circumstances, **telemetry has a lot of interference**, which affects the
-reading of the pulses and causes some outliers in the data. These spikes or valleys are not real measurements, are
-errors in the reading of the pulses and are usually manually identified and removed.
+reading of the pulses and causes some outliers in the data. These spikes or valleys are not real measurements. Instead,
+they are errors in the reading of the pulses and usually require manual identification and removal.
 
 ![](https://www.researchgate.net/publication/257709973/figure/fig1/AS:866939387781120@1583705865271/Typical-example-of-noise-in-the-steerable-drilling-downward-command-signal.png)
 
@@ -67,8 +73,8 @@ expression `g(x) = atan(f'(x))`, in radians, or `h(x) = atan(f'(x)) * 180/π`, i
 Looking to the graph of `f(x)`, it's easy to find out where the curve changed its direction. And this is also reflected
 in the graph for `f'(x)`, since the speed was `0`, coming from negative to positive.
 
-And it's also interesting to observe the relation between the `f(x)` and `h(x)`: when `x` tends to `-∞`, `h(x)` tends
-to `-90`; and when `x` tends to `+∞`, `h(x)` tends to `90`, however, it never touches `-90` or `90`. And it's intuitive
+It's also interesting to observe the relation between the `f(x)` and `g(x)`: when `x` tends to `-∞`, `g(x)` tends
+to `-90`; and when `x` tends to `+∞`, `g(x)` tends to `90`, however, it never touches `-90` or `90`. And it's intuitive
 to read this from `f(x)`, since having either `-90` or `90` would mean `f(x)` would have multiple values for the
 same `x`, which is impossible.
 
@@ -84,7 +90,7 @@ acceleration.
 
 ![](/img/spikes-xx-2x-2.png)
 
-An important aspects of the acceleration that will be useful when writing the algorithm is that the acceleration is
+An important aspect of the acceleration that will be useful when writing the algorithm is that the acceleration is
 positive, which means that the curvature points upwards. If `f(x) = -x^2`, it's acceleration would be given
 by `f''(x) = -2` instead, and its curvature would point downward.
 
@@ -109,9 +115,7 @@ https://en.wikipedia.org/wiki/Second_derivative
 The understanding of these insights is relevant for the understanding of the algorithm:
 
 - when the curve changes its direction
-- when the curve changes its curvatureThe acceleration of a curve is relevant because it's more sensitive to the
-  variations of the tendency of the curve than the speed itself, and because it's also an indication of the direction of
-  the curve.
+- when the curve changes its curvature
 
 ### Speed and Acceleration in discrete series
 
@@ -127,17 +131,18 @@ The speed of discrete series of data can be calculated as the angle between two 
 differences between `(x0, y0)` and `(x1, y1)`: `dY/dX = (y1-y0)/(x1-x0)`.
 
 For a series of data points `S1(x,y) = {[1,1], [2,2], [3,3]}`, the speed between 1st and 2nd points, and between 2nd and
-3rd points equals `1` (`dY/dX = (2-1)/(2-1)` and `dY/dX = (3-2)/(3-2)`), while the speed between 2nd and 3rd points
-equals `8` (`dY/dX = (10-2)/(3-2)`). However, for the series of data points `S2(x,y) = {[1,1], [2,2], [3,10]}`, the
-speed between 1st and 2nd points is `1` (`dY/dX = (2-1)/2-1)`) while between 2nd and 3rd is `8` (`dY/dX = (10-2)/(3-2)`)
-. Then the series of speeds are respectively `S1'(x,y) = {[1,1], [2,1]}` and `S2'(x,y) = {[1,1], [2,8]}`
+3rd points equals `1` (`dY/dX = (2-1)/(2-1)` and `dY/dX = (3-2)/(3-2)`). However, for the series of data
+points `S2(x,y) = {[1,1], [2,2], [3,10]}`, the speed between 1st and 2nd points is `1` (`dY/dX = (2-1)/2-1)`) while
+between 2nd and 3rd is `8` (`dY/dX = (10-2)/(3-2)`). Then the series of speeds are
+respectively `S1'(x,y) = {[1,1], [2,1]}` and `S2'(x,y) = {[1,1], [2,8]}`
 
 ![](/img/spikes-discrete-examples.png)
 
 Like the 2nd derivative, the acceleration of the discrete series can be calculated as an extension of the speed, i.e.
 the quotient of the differences between two speeds `(x'0, y'0)` and `(x'1, y'1)`: `d'Y/dX = (y'1-y'0)/(x'1-x'0)`.
-Therefore, given the previous data sets, `S1''(x,y) = {[1,0]}` and `S2''(x,y) = {[1, 7]}`. That is, the acceleration of
-S1 is `0` while the acceleration of S2 is `7` for the sets specified.
+Therefore, given the previous data sets, the acceleration will be given by `S1''(x,y) = {[1,0]}`
+and `S2''(x,y) = {[1, 7]}`. That is, the acceleration of S1 is `0` while the acceleration of S2 is `7` for the sets
+specified.
 
 # Identifying Spikes
 
@@ -146,8 +151,8 @@ And the reason for this is that the acceleration will easily show the changes in
 
 However, how much acceleration change is considered a potential spike or valley spot?
 
-The answer depends on the actual behaviour and tendency of dispersion of the data set. Therefore, it's important monitor
-the **Standard Deviation** of the acceleration to define what's acceptable and what's not.
+The answer depends on the actual behaviour and tendency of dispersion of the data set. Therefore, it's also important
+measure the **Standard Deviation** of the acceleration to define what's acceptable and what's not.
 
 # Spike simulator
 
