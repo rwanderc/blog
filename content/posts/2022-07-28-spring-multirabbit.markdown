@@ -15,14 +15,6 @@ tags:
 
 ---
 
-In 2019, I published this article [**SpringBoot with Multiple RabbitMQ brokers**][oldpost] with the first version
-of `spring-multirabbit`. This post is intended to be an up-to-date version of that one whenever there are changes in the
-library.
-
-Last revision: **SpringBoot 2.7.2** & `spring-multirabbit:2.7.0`.
-
----
-
 SpringBoot doesn't offer a very easy way of handling multiple RabbitMQ servers without introducing the complexity of
 SpringCloud Stream or the need to manually provide multiple connection factories in code.
 
@@ -31,9 +23,8 @@ extension of the configuration.
 
 # How to use?
 
-## Dependencies
-
-Add `spring-boot-starter-amqp` and `spring-multirabbit`.
+Add `spring-boot-starter-amqp` and `spring-multirabbit` into the dependencies of the project. Bellow, an example for
+Maven.
 
 ```xml
 
@@ -65,7 +56,7 @@ spring.multirabbitmq.thirdServer.port:5672
 For the sake of simplification, no credentials or any other configuration is being provided. However, all the possible
 parameters that are available under `spring.rabbitmq` are available for the additional servers.
 
-### Versions
+## Versions
 
 The correct version of `spring-multirabbit` depends on the version of SpringBoot:
 
