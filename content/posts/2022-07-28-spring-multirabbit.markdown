@@ -33,8 +33,10 @@ simple extension of the configuration.
 
 ## Dependencies
 
-Add `spring-boot-starter-amqp` and `spring-multirabbit`. Note that the correct version of `spring-multirabbit`
-depends on the SpringBoot version of the application. For more information about versioning, read below.
+Add `spring-boot-starter-amqp` and `spring-multirabbit`.
+
+The correct version of `spring-multirabbit` depends on the version of SpringBoot. For more information about versioning,
+read below.
 
 ```xml
 <dependency>
@@ -48,17 +50,18 @@ depends on the SpringBoot version of the application. For more information about
 </dependency>
 ```
 
-Update the configuration to introduce the additional servers. The example below has a default server configured at
-`spring.rabbitmq` and introduces two additional servers configured under `spring.multirabbitmq.serverB` and
-`spring.multirabbitmq.thirdServer`.
+Update the configuration to introduce the additional servers.
+
+The example below has a default server configured at `spring.rabbitmq` and introduces two additional servers configured
+under `spring.multirabbitmq.serverB` and `spring.multirabbitmq.thirdServer`.
 
 ```properties
-spring.rabbitmq.host: 10.0.0.10
-spring.rabbitmq.port: 5672
-spring.multirabbitmq.serverB.host: msgbroker.somedomain.com
-spring.multirabbitmq.serverB.port: 5672
-spring.multirabbitmq.thirdServer.host: 173.49.20.18
-spring.multirabbitmq.thirdServer.port: 5672
+spring.rabbitmq.host:10.0.0.10
+spring.rabbitmq.port:5672
+spring.multirabbitmq.serverB.host:msgbroker.somedomain.com
+spring.multirabbitmq.serverB.port:5672
+spring.multirabbitmq.thirdServer.host:173.49.20.18
+spring.multirabbitmq.thirdServer.port:5672
 ```
 
 For the sake of simplification, no credentials or any other configuration is being provided. However, all the possible
