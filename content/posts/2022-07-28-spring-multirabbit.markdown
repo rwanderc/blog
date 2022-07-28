@@ -73,8 +73,9 @@ The correct version of `spring-multirabbit` depends on the version of SpringBoot
 - SpringBoot 2.6.x -> `spring-multirabbit:2.6.0`
 - SpringBoot 2.5.x -> `spring-multirabbit:2.5.0`
 
-There are some cases where SpringBoot's APIs change which requires another `spring-multirabbit` version, however this is
-very unlikely to happen. More info regarding compatibility in the [project's wiki page][compatibility].
+There are some cases where SpringBoot's APIs changes break compabitility with `spring-multirabbit`, and it requires
+another version, however this is very unlikely to happen. More info regarding compatibility in the
+[project's wiki page][compatibility].
 
 ## Listeners
 
