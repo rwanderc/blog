@@ -52,7 +52,7 @@ Update the configuration to introduce the additional servers. The example below 
 `spring.rabbitmq` and introduces two additional servers configured under `spring.multirabbitmq.serverB` and
 `spring.multirabbitmq.thirdServer`.
 
-```
+```properties
 spring.rabbitmq.host: 10.0.0.10
 spring.rabbitmq.port: 5672
 spring.multirabbitmq.serverB.host: msgbroker.somedomain.com
