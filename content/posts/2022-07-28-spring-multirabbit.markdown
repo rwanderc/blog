@@ -3,7 +3,7 @@ layout:      "post"
 url:         "/sprint-multirabbit/"
 title:       "Spring Multirabbit"
 subtitle:    "SpringBoot with multiple RabbitMQ servers"
-date:        "2022-07-28 09:09:00"
+date:        "2022-07-28 21:45:00"
 author:      "Wander Costa"
 tags:
 
