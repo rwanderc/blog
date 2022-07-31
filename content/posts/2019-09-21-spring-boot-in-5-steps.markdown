@@ -13,7 +13,7 @@ img_credits_url: https://www.freepik.com/free-photos-vectors/travel
 img_credits_real_url: https://www.freepik.com/free-photo/hiking-female-boots_3709511.htm#page=8&query=boot&position=38
 tags:
 - java
-- spring boot
+- springboot
 - software development
 ---
 

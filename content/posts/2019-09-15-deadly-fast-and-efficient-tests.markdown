@@ -13,7 +13,7 @@ img_credits_url: https://www.freepik.com/free-photos-vectors/businesss
 img_credits_real_url: https://www.freepik.com/free-vector/devices_2945063.htm#page=1&query=clock&position=1
 tags:
 - java
-- testing
+- test
 ---
 
 **Unit testing** in [OOP][OOP] is the test of the smallest testable piece of code: the class. It's used to make sure a single class does what it's supposed to do.

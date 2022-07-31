@@ -11,7 +11,7 @@ header_img:  "/img/post-bg-binary.jpg"
 thumb_img:   "/img/post-thumb-binary.jpg"
 tags:
 - java
-- basics
+- core
 ---
 
 **Bit Shift** and **Bitwise** are operators that make **binary calculations** perfectly straightforward.

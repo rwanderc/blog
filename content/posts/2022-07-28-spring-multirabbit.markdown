@@ -10,9 +10,8 @@ tags:
 - software development
 - springboot
 - rabbitmq
-- multirabbit
+- spring multirabbit
 - events
-- messaging
 
 ---
 

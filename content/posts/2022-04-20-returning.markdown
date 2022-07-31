@@ -6,8 +6,6 @@ subtitle:    "and here is why"
 date:        2022-04-20 19:30:00
 author:      "Wander Costa"
 tags:
-- blog
-- writing
 - software development
 - engineering management
 - spring multirabbit
