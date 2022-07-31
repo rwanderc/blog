@@ -20,7 +20,7 @@ spring.multirabbitmq.serverB.port:5672
 spring.multirabbitmq.thirdServer.host:173.49.20.18
 spring.multirabbitmq.thirdServer.port:5672
 </code></pre><p>For the sake of simplification, no credentials or any other configuration is being provided. However, all the possible
-parameters that are available under <code>spring.rabbitmq</code> are available for the additional servers.</p><h2 id=versions>Versions</h2><p>The correct version of <code>spring-multirabbit</code> depends on the version of SpringBoot:</p><ul><li>SpringBoot 2.7.x -> <code>spring-multirabbit:2.7.0</code></li><li>SpringBoot 2.6.x -> <code>spring-multirabbit:2.6.0</code></li><li>SpringBoot 2.5.x -> <code>spring-multirabbit:2.5.0</code></li></ul><p>There are some cases where SpringBoot&rsquo;s APIs changes break compabitility with <code>spring-multirabbit</code>, and it requires
+parameters that are available under <code>spring.rabbitmq</code> are available for the additional servers.</p><h2 id=versions>Versions</h2><p>The correct version of <code>spring-multirabbit</code> depends on the version of SpringBoot:</p><ul><li>SpringBoot 2.7.x -> <code>spring-multirabbit:2.7.0</code></li><li>SpringBoot 2.6.x -> <code>spring-multirabbit:2.6.0</code></li><li>SpringBoot 2.5.x -> <code>spring-multirabbit:2.5.0</code></li></ul><p>There are some cases where SpringBoot&rsquo;s APIs changes break compatibility with <code>spring-multirabbit</code>, and it requires
 another version, however this is very unlikely to happen. More info regarding compatibility in the
 <a href=https://github.com/freenowtech/spring-multirabbit/wiki>project&rsquo;s wiki page</a>.</p><h2 id=listeners>Listeners</h2><p>The <code>spring-multirabbit</code> library creates necessary beans using the same names as the servers provided from the
 configuration. Thus, you can start listening to messages from the specified server by simply setting
@@ -77,10 +77,11 @@ below:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-co
 </span></span></code></pre></div><h1 id=more-examples>More examples</h1><p>For more examples, access the <a href=https://github.com/freenowtech/spring-multirabbit/tree/main/spring-multirabbit-examples>example modules</a> in the source code.</p><h1 id=source-code>Source Code</h1><p><code>spring-multirabbit</code> is open source and available at <a href=https://github.com/freenowtech/spring-multirabbit>https://github.com/freenowtech/spring-multirabbit</a>. Feel free to
 contribute.</p><div class=blog-tags>Tags:
 <a href=https://wandercosta.com/tags/software-development/>software development</a>&nbsp;
-<a href=https://wandercosta.com/tags/messaging/>messaging</a>&nbsp;
 <a href=https://wandercosta.com/tags/springboot/>springboot</a>&nbsp;
 <a href=https://wandercosta.com/tags/rabbitmq/>rabbitmq</a>&nbsp;
-<a href=https://wandercosta.com/tags/multirabbit/>multirabbit</a>&nbsp;</div></article><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="wandercosta",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the
+<a href=https://wandercosta.com/tags/multirabbit/>multirabbit</a>&nbsp;
+<a href=https://wandercosta.com/tags/events/>events</a>&nbsp;
+<a href=https://wandercosta.com/tags/messaging/>messaging</a>&nbsp;</div></article><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="wandercosta",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the
 <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><footer><div class=social-icons><a href=/index.xml name=feed><em class="fa fa-rss-square"></em></a>
 &nbsp;&ndash;&nbsp;
 <a href=mailto:contact@wandercosta.com name=email><em class="fas fa-envelope"></em></a>
