@@ -26,6 +26,8 @@ Last update: August 21st, 2022.
 | **Operation**                    | **Command**                                  |
 |:---------------------------------|:---------------------------------------------|
 | Commit without files             | `git commit -m "some message" --allow-empty` |
+| List commits in one line each    | `git log --oneline`                          |
+|                                  |                                              |
 | Remove local tag                 | `git tag -d <tag_name>`                      |
 | Remove remote tag                | `git push --delete origin <tag_name>`        |
 |                                  |                                              |
