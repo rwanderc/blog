@@ -40,6 +40,6 @@ Last update: August 21st, 2022.
 | Rebase                           | `git rebase <branch>`                        |
 | Rebase interactive               | `git rebase -i <branch>`                     |
 |                                  |                                              |
-| Add a remote                     | `git remove add <alias> <uri>`               |
+| Add a remote                     | `git remote add <alias> <uri>`               |
 
 What about you? Do you want to share git commands you always forget?
