@@ -61,8 +61,8 @@ require manual identification and removal.
 # Mathematical background
 
 Detecting spikes or valleys in discrete series of data is a matter of identifying a big variation in the
-**acceleration**, associated with a few other factors. In continuous curves, identifying the acceleration is one step
-after identifying the **speed** of the curve and can be given by the derivatives of the curve. In discrete series of
+**acceleration**, associated with a few other factors. In continuous functions, identifying its acceleration is one step
+after identifying its **speed** and they can be given by the first and second derivatives of the function. In discrete series of
 data, the analog concept can be applied.
 
 ### Speed
