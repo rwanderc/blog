@@ -74,7 +74,7 @@ curve in any point by the expression `g(x) = atan(f'(x))`, in radians, or `h(x) 
 
 ![](/img/spikes-xx-2x-angle.png)
 
-Looking to the graph of `f(x)`, it's easy to find out where the curve changed its direction. And this is also reflected
+Looking to the graph of `f(x)`, it's easy to see where the curve changed its direction. And this is also reflected
 in the graph for `f'(x)`, since that the value transits from negative to positive passing through `0`.
 
 It's also interesting to observe the relation between `f(x)` and `g(x)` in the limits: when `x` tends to `-∞`, `g(x)` tends to `-90`; and when `x` tends to `+∞`, `g(x)` tends to `90`, however, `g(x)` never touches `-90` or `90`.
@@ -105,7 +105,7 @@ is constant.
 
 Take another example function and its derivatives with a different behaviour: `f(x) = x^3 - 15x`, `f'(x) = 3x^2 - 15`
 and `f''(x) = 6x`. From the second graph, it's easy to spot the 2 moments where the `f'(x) = 0`, which is the reflection
-of `f(x)` changing direction from increasing to decreasing, and from decreasing to increasing i.e. the speed
+of `f(x)` changing direction from increasing to decreasing or vice-versa, i.e. the speed
 reached `f'(x) = 0` for both `x = sqrt(5)`
 and `x = -sqrt(5)`.
 
