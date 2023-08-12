@@ -62,30 +62,29 @@ require manual identification and removal.
 
 Detecting spikes or valleys in discrete series of data is a matter of identifying a big variation in the
 **acceleration**, associated with a few other factors. In continuous functions, identifying its acceleration is one step
-after identifying its **speed** and they can be given by the first and second derivatives of the function. In discrete series of
+after identifying its **speed** and they can be given by the derivatives of the function. In discrete series of
 data, the analog concept can be applied.
 
-### Speed
+## Speed
 
 The speed of a curve is given by its first derivative, and can ultimately be used to calculate the angle of the curve in
-a specific point, i.e. the tangent in a specific point. In the parabola below, described by the expression `f(x) = x^2`,
-its first derivative is expressed by `f'(x) = 2x`. And from that, it's possible to calculate the exact angle of the
+a specific point, i.e. the tangent in a specific point. In the parabola below, described by the function `f(x) = x^2`,
+its first derivative function is expressed by `f'(x) = 2x`. And from that, it's possible to calculate the exact angle of the
 curve in any point by the expression `g(x) = atan(f'(x))`, in radians, or `h(x) = atan(f'(x)) * 180/π`, in degrees.
 
 ![](/img/spikes-xx-2x-angle.png)
 
 Looking to the graph of `f(x)`, it's easy to find out where the curve changed its direction. And this is also reflected
-in the graph for `f'(x)`, since the speed transits from negative to positive passing through `0`.
+in the graph for `f'(x)`, since that the value transits from negative to positive passing through `0`.
 
-It's also interesting to observe the relation between the `f(x)` and `g(x)` in the limits: when `x` tends to `-∞`
-, `g(x)` tends to `-90`; and when `x` tends to `+∞`, `g(x)` tends to `90`, however, `g(x)` never touches `-90` or `90`.
+It's also interesting to observe the relation between `f(x)` and `g(x)` in the limits: when `x` tends to `-∞`, `g(x)` tends to `-90`; and when `x` tends to `+∞`, `g(x)` tends to `90`, however, `g(x)` never touches `-90` or `90`.
 And it's intuitive to read this from `f(x)`, since having angles of either `-90` or `90` would mean `f(x)` would be a
 vertical line, therefore having infinite values for the same `x`.
 
 For this work, it's interesting to understand the relation of the first derivative, the angle and the curve, but it
 won't be necessary to calculate angles in radians or degrees. Therefore, keep focusing on the derivatives only.
 
-### Acceleration
+## Acceleration
 
 The acceleration of a curve can be interpreted as an extension of the concept of the speed, however given by the second
 derivative. Therefore, for the function `f(x) = x^2`, the first derivative is given by the expression `f'(x) = 2x` while
