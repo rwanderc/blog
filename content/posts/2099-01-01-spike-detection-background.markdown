@@ -104,7 +104,7 @@ is constant.
 ![](/img/spikes-xx-2x-2-negative.png)
 
 Take another example function and its derivatives with a different behaviour: `f(x) = x^3 - 15x`, `f'(x) = 3x^2 - 15`
-and `f''(x) = 6x`. From the second graph, it's easy to spot the 2 moments where the `f'(x) = 0`, which is the reflection
+and `f''(x) = 6x`. From the second graph, it's easy to spot the 2 moments where `f'(x) = 0`, which is the reflection
 of `f(x)` changing direction from increasing to decreasing or vice-versa, i.e. the speed
 reached `f'(x) = 0` for both `x = sqrt(5)`
 and `x = -sqrt(5)`.
@@ -116,18 +116,18 @@ However, it provides different and important insight: the indication of the chan
 described by `f(x)`. Looking at the graph from `f''(x)`, it's easy to find where `f(x)` stopped behaving as a parabola
 pointing downward and started behaving as a parabola pointing upward, since the acceleration reached `0`, coming from
 negative to positive. This is then the point of inflection of `f(x)`: the point where the function `f(x)` changes
-concavity.
+concavity direction.
 
 For the scope of the algorithm, it's important to understand how to identify:
 
 - Points where the 1st derivative changes signal
 - Points of inflection, where the 2nd derivative changes signal
 
-### Speed and Acceleration in discrete series
+## Speed and Acceleration in discrete series
 
-For discrete series of data, there is no given expression that can be used to strictly calculate derivatives. In fact,
-discrete series are not functions, but a set of points. Therefore, the way to calculate speed or acceleration is to use
-what would be an approximation, i.e. a straight line between those two points. Speed and acceleration have their analog
+Discrete series of data are discontinuous by definition. Concepts like limits, derivatives, integrals are not applicable. In fact,
+discrete series are not even functions, but sets of  points. Therefore, the way to calculate speed or acceleration is to use
+what would be an approximation of the concepts of derivatives, i.e. a straight line between two neighbor points. Speed and acceleration have their analog
 meanings for discrete series considering the same logic.
 
 ![](/img/spikes-xx-discrete.png)
