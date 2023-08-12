@@ -65,6 +65,8 @@ Detecting spikes or valleys in discrete series of data is a matter of identifyin
 after identifying its **speed** and they can be given by the derivatives of the function. In discrete series of
 data, the analog concept can be applied.
 
+This section does not ....
+
 ## Speed
 
 The speed of a curve is given by its first derivative, and can ultimately be used to calculate the angle of the curve in
