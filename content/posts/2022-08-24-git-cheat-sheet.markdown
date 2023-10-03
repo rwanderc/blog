@@ -21,7 +21,7 @@ tags:
 Below is a table with commands I don’t run frequently enough to remember them, and have to rely on searching on internet
 again and again. Now it’s saved somewhere. 😀
 
-Last update: August 21st, 2022.
+Last update: October 3rd, 2023.
 
 | **Operation**                    | **Command**                                  |
 |:---------------------------------|:---------------------------------------------|
