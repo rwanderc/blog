@@ -35,6 +35,8 @@ Last update: August 21st, 2022.
 | Retrieve changes from stash      | `git stash pop`                              |
 |                                  |                                              |
 | Delete local uncommitted changes | `git reset --hard`                           |
+| Delete commits until ID          | `git reset --hard <commit_ID>`               |
+| Delete local changes to file     | `git restore <file>`                         |
 | Revert a commit                  | `git revert <commit_ID>`                     |
 |                                  |                                              |
 | Rebase                           | `git rebase <branch>`                        |
