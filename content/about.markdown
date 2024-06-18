@@ -21,11 +21,12 @@ I really enjoy the proces of solving issues, the building of new functionalities
 As an **engineering lead** since 2020, my work is completely different but still chasing the same outcome of transforming code into impact, however through leading teams. \
 My main work is to help engineers succeed delivering reults and growing. That's a much harder goal, but honestly nobody ever told me it would be easier.
 
-**Coffee lover on pause?**
+# Coffee lover on pause?
 Yeah, I'm coffee lover, black pls. \
 Spent some time trying to make home made espressos, but I wouldn't say I was very successfull on that. :grimacing: \
 Nevertheless I'm on a coffee pause for some time.
 
-**What's WanderCosta.com about?**
-This is a personal blog, written, editted and maintained by me. I share my own opinions and thoughts.
-I write about any topics, sometimes sharing tips and thoughts; maybe memes, non-sense, pictures of cats or dogs might also be expected.
+# What's WanderCosta.com about?
+This is a personal blog, written, editted and maintained by me. \
+I share my own opinions and thoughts. \
+And I write about any topics, sometimes sharing tips and thoughts; maybe memes, non-sense, pictures of cats or dogs might also be expected.
