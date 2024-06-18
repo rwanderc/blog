@@ -27,6 +27,6 @@ Spent some time trying to make home made espressos, but I wouldn't say I was ver
 Nevertheless I'm on a coffee pause for some time.
 
 # What's WanderCosta.com about?
-This is a personal blog, written, editted and maintained by me. \
+This is a personal blog written, edited, and maintained by me. \
 I share my own opinions and thoughts. \
-And I write about any topics, sometimes sharing tips and thoughts; maybe memes, non-sense, pictures of cats or dogs might also be expected.
+And I write about any topics, sometimes sharing tips and insights; maybe memes, non-sense, pictures of cats or dogs might also be expected.
