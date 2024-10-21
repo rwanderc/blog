@@ -16,7 +16,7 @@ enableEmoji = true
   enableGoogleAnalytics = true
 
 [params.logo]
-  url = "logo-64.jpg"
+  url = "../img/logo-64.jpg"
   width = 50
   height = 50
   alt = "Logo"
