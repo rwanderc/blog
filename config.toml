@@ -15,6 +15,9 @@ enableEmoji = true
   basethumb = "/img/wander-thumb.png"
   enableGoogleAnalytics = true
 
+[params.meta]
+  favicon = false
+
 [params.logo]
   url = "../img/logo-64.jpg"
   width = 50
