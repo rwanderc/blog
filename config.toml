@@ -3,13 +3,23 @@ languageCode = "en-us"
 title = "WanderCosta"
 theme = "harbor"
 enableEmoji = true
-googleAnalytics = "G-00ERBL6RH1"
-disqusShortname = "wandercosta"
+
+[services.disqus]
+  shortname = "wandercosta"
+
+[services.GoogleAnalytics]
+  ID = "G-00ERBL6RH1"
 
 [params]
   description = "Thoughts and pieces of code, sometimes none of them."
   basethumb = "/img/wander-thumb.png"
   enableGoogleAnalytics = true
+
+[params.logo]
+  url = "logo-64.jpg"
+  width = 50
+  height = 50
+  alt = "Logo"
 
 [params.og]
   hometype = "website"
@@ -76,11 +86,5 @@ disqusShortname = "wandercosta"
 
 [[params.social]]
   name = "linkedin"
-  url = "https://www.linkedin.com/in/rwanderc/"
+  url = "https://www.linkedin.com/in/rwanderc"
   icon = "fab fa-linkedin"
-
-[params.logo]
-  url = "/img/logo-64.jpg"
-  width = 50
-  height = 50
-  alt = "Logo"
