@@ -21,10 +21,7 @@ tags:
 
 ---
 
-> GPG stands for GNU Privacy Guard, an implementation of public key cryptography, which can be used both for the more
-> standard operations of encryption keys (encrypt/decrypt), and for message verification via signature. [Doc](gpg-doc)
-
-For you to have signed commits in GitHub, you need to:
+In this post, we will enable you to have GitHub verified commits. For that, you have to:
 
 - Create a GPG key
 - Configure GitHub with its public key
@@ -140,7 +137,6 @@ sub   cv25519 2024-10-20 [E] [expires: 2027-10-20]
 Note that this key will expire in 3 years. If you want to configure it differently, even defining not expiration, use
 the personalized way running `gpg --full-generate-key`.
 
-
 # Export the Public Key and configure GitHub
 
 1. Extract the public key from the GPG key by running the command below. Change the ID to refer to your GPG's key ID.
@@ -166,9 +162,8 @@ Ygk=
 2. Access your [Settings](gh-settings) page at GitHub and click on **SSH and GPG keys**.
 3. Click the button **New GPG key**.
 4. Choose a name for your key, and paste the content from the public key, obtained in step [1].
-   
-![img/github-gpg-key-creation.png](/img/github-gpg-key-creation.png)
 
+![img/github-gpg-key-creation.png](/img/github-gpg-key-creation.png)
 
 # Configure git to sign commits
 
