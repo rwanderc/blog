@@ -16,19 +16,22 @@ tags:
 
 [**spring-multirabbit**][fn-gh] ([maven][fn-mvn]) project was discontinued in February 2024 and FREE NOW will not
 maintain it any longer.
-I decided to branch it and continue supporting it myself under my [github.com/rwanderc/spring-multirabbit][gh] fork and
-releasing under my [wandercosta.com maven namespace][maven].
+I decided to fork it and continue supporting it myself under my [github.com/rwanderc/spring-multirabbit][gh] repository
+and releasing under my [wandercosta.com maven namespace][maven].
 
-I created this project at FREE NOW in 2019 when I was working there, however I stepped away from its evolution while in
-the company due to the focus in other areas, and even further when I left the company in 2023.
+**DISCLAIMER: The library and this initiative to continue supporting it are completely independent of my previous or
+current employers.**
 
-However, apparently there are some users of this library, as people has being asking for the support of further
-SpringBoot versions.
-Recently, in October 2024, I re-branched the project under my GitHub account and started working on the compatibility
-updates from Spring Boot 2.7.x until 3.4.x (current last version). Check the [compatibility list][gh-compatibility] for
-details.
+I created this project in 2019 while working at FREE NOW, but I stepped away from its evolution yet in the company due
+to the focus change towards engineering management, and even further when I left the company in 2023.
 
-Current last version is `com.wandercosta.multirabbit:spring-multirabbit:3.3.0` for compatibility with SpringBoot 3.3.x.
+After I stopped evolving it, some people kept asking about the maintenance of the library, requesting it to support
+further versions of Spring Boot. Apparently, it's useful to some folks.
+Recently, in October 2024, I forked the project under my GitHub account and started working on the compatibility
+updates from Spring Boot 2.7.x until 3.3.x (current version 3.3.5). Check the
+[compatibility list][gh-compatibility] for further details.
+
+Current version is `com.wandercosta.multirabbit:spring-multirabbit:3.3.0` for compatibility with SpringBoot 3.3.x.
 
 ```xml
 <dependency>
@@ -38,10 +41,11 @@ Current last version is `com.wandercosta.multirabbit:spring-multirabbit:3.3.0` f
 </dependency>
 ```
 
-However, I'm not a user of this library any longer️ :grimacing:, as I don't have such use case in my daily routine. This
-means that I might not easily capture nuances of the evolution needs of the library, and need your help to keep evolving
-it.
-In resume, I'm welcoming contributions, issues, comments, pull requests, and every way you can contribute to the
+It's important to mention as well that I'm not a user of this library any longer️ :grimacing:, as I don't have such a use
+case in my daily routine.
+It means that I might not easily capture nuances of the evolution needs of the library, and need your help to keep
+evolving it.
+In other words, I'm welcoming contributions, issues, comments, pull requests, and every way you can contribute to the
 evolution of the library at [github.com/rwanderc/spring-multirabbit][gh].
 
 [fn-gh]: https://github.com/freenowtech/spring-multirabbit
