@@ -13,7 +13,6 @@ img_credits_url: https://www.freepik.com/free-photos-vectors/frame
 img_credits_real_url: https://www.freepik.com/free-psd/frames-living-room_4500896.htm#page=8&query=frames&position=39
 tags:
 - design patterns
-- software development
 ---
 
 ### A decorator is like a picture frame. It wraps the main object, adding some other functionality to it.

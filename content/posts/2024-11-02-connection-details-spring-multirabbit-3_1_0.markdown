@@ -6,11 +6,9 @@ subtitle: "ConnectionDetails was introduced in version 3.1.0, and here is how to
 date: "2024-11-02 13:59:15"
 author: "Wander Costa"
 tags:
-  - software development
-  - springboot
-  - rabbitmq
+  - spring boot
   - spring multirabbit
-  - open source
+  - RabbitMQ
 
 ---
 

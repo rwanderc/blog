@@ -6,11 +6,10 @@ subtitle: "Updates on Spring Multirabbit in 2024 and further"
 date: "2024-10-31 20:46:21"
 author: "Wander Costa"
 tags:
-  - software development
-  - springboot
-  - rabbitmq
+  - java 
+  - spring boot
   - spring multirabbit
-  - open source
+  - RabbitMQ
 
 ---
 

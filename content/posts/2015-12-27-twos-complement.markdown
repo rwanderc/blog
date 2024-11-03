@@ -11,7 +11,7 @@ header_img:  "/img/post-bg-twos-complement.jpg"
 thumb_img:   "/img/post-thumb-twos-complement.jpg"
 tags:
 - java
-- core
+- java core
 ---
 
 Have you ever thought about how numbers are represented in your computer? We all know that computers "talk" in binary, but how exactly does it work?

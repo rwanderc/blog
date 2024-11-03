@@ -7,8 +7,7 @@ author:      "Wander Costa"
 draft:       "false"
 header_img:  "/img/post-bg-about.png"
 tags:
-- software development
-- engineering management
+- management
 ---
 
 Hi. I'm **Wander Costa**, husband, coffee lover on pause,

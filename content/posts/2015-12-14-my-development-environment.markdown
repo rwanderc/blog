@@ -9,8 +9,6 @@ date:        2015-12-14 13:56:00
 author:      "Wander Costa"
 header_img:  "/img/post-bg-my-development-environment.jpg"
 thumb_img:   "/img/post-thumb-my-development-environment.jpg"
-tags:
-- software development
 ---
 
 Hi there! This is the very first post of my blog, and I decided to start with my development environment. Need to make it clear that this is my first blog, however, I ever wanted to create one. So, here we go...<!--more-->

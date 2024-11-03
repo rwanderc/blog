@@ -6,11 +6,10 @@ subtitle: "Retry logic for RabbitMQ listeners in Spring Boot"
 date: "2024-11-03 02:09:15"
 author: "Wander Costa"
 tags:
-  - software development
-  - springboot
-  - rabbitmq
+  - java
+  - spring boot
   - spring multirabbit
-  - open source
+  - RabbitMQ
 
 ---
 

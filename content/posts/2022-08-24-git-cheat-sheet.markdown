@@ -14,7 +14,6 @@ img_credits_real_url: https://www.freepik.com/free-vector/set-tree-branch_338820
 tags:
 
 - git
-- cheat
 
 ---
 

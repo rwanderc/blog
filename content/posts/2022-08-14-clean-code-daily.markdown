@@ -12,10 +12,7 @@ img_credits: "kues"
 img_credits_url: https://www.freepik.com/author/kues
 img_credits_real_url: https://www.freepik.com/free-photo/tree-beautiful-day_928890.htm
 tags:
-- java
-- clean code
-- maintainability
-- cognitive complexity
+- code quality
 
 ---
 

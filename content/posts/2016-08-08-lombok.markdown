@@ -10,6 +10,7 @@ header_img:  "/img/post-bg-lombok.jpg"
 thumb_img:   "/img/post-thumb-lombok.jpg"
 tags:
 - java
+- code quality
 - productivity
 ---
 

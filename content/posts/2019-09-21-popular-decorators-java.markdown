@@ -14,7 +14,6 @@ img_credits_real_url: https://www.freepik.com/free-photo/hot-coffee-cup-set-wood
 tags:
 - java
 - design patterns
-- software development
 ---
 
 As a software developer, you probably know the [Decorator Design Pattern][decorator-wiki], described in GoF. If not, [read this first][decorator].

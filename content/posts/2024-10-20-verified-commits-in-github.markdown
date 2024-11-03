@@ -12,12 +12,8 @@ author: "Wander Costa"
 #img_credits_url: https://www.freepik.com/author/kues
 #img_credits_real_url: https://www.freepik.com/free-photo/tree-beautiful-day_928890.htm
 tags:
-  - cryptography
+  - git
   - github
-  - gpg
-  - verified commits
-  - verified
-  - public key
 
 ---
 

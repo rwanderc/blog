@@ -6,12 +6,10 @@ subtitle:    "SpringBoot with multiple RabbitMQ servers"
 date:        "2022-07-28 21:45:00"
 author:      "Wander Costa"
 tags:
-
-- software development
-- springboot
-- rabbitmq
+- java
+- spring boot
 - spring multirabbit
-- events
+- rabbitmq
 
 ---
 

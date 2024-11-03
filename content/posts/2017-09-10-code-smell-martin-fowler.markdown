@@ -9,7 +9,7 @@ author:      "Wander Costa"
 header_img:  "/img/post-bg-codesmell.jpg"
 thumb_img:   "/img/post-thumb-codesmell.jpg"
 tags:
-- code smell
+  - code quality
 ---
 
 This is a post written in Portuguese, as a free translation of [Martin Fowler][martinfowler]'s article [CodeSmell][codesmell]. Translated on September 10, 2017.
